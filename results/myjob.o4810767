@@ -1,0 +1,25 @@
+Initial Score: 5154247
+
+=== Phase 1: Continuous Relaxation ===
+Iter 1:    - Gradient took 2.1744 s
+   - Preconditioned LAP... Done took 27.4949 s
+   - Alpha: 1.0000
+ | Proj Score: 5803511
+Iter 2:    - Gradient took 3.7432 s
+   - Preconditioned LAP... Done took 29.5123 s
+   - Alpha: 0.5874
+ | Proj Score: 5816494
+Iter 3:    - Gradient took 5.5264 s
+   - Preconditioned LAP... Done took 34.1437 s
+   - Alpha: 0.7209
+ | Proj Score: 5838519
+Iter 4:    - Gradient took 7.3371 s
+   - Preconditioned LAP... Done took 36.8544 s
+   - Alpha: 0.3868
+ | Proj Score: 5839686
+Iter 5:    - Gradient took 9.1242 s
+   - Preconditioned LAP... Done took 40.2143 s
+   - Alpha: 0.4619
+ | Proj Score: 5844896
+Iter 6:    - Gradient took 10.9314 s
+   - Preconditioned LAP... 

@@ -11,7 +11,6 @@
 #include <Eigen/Dense>
 #include <omp.h>
 
-// Include your provided header
 #include "lapjv.h"
 
 using SparseMat = Eigen::SparseMatrix<double>;
@@ -37,21 +36,11 @@ std::string clean_id(std::string s) {
 // Modifies the matrix in-place (used for cost reduction inside lapjv) to avoid copies.
 Eigen::VectorXi solve_linear_assignment(Eigen::Ref<MatrixRowMaj> cost_matrix) {
     int n = cost_matrix.rows();
-    
-    // Create array of pointers to the existing rows
-    // No data copying happens here, only pointer generation.
     std::vector<double*> rows(n);
-    for(int i = 0; i < n; ++i) {
-        rows[i] = cost_matrix.row(i).data();
-    }
+    for(int i = 0; i < n; ++i) rows[i] = cost_matrix.row(i).data();
 
     std::vector<int> x(n), y(n);
-    
-    // Call the library function.
-    // lapjv_internal modifies the cost matrix during reduction.
-    // Since we passed a reference, this is safe and strictly zero-copy.
     lapjv_internal(n, rows.data(), x.data(), y.data());
-    
     return Eigen::Map<Eigen::VectorXi>(x.data(), n);
 }
 
@@ -129,13 +118,13 @@ class ACDCSolver {
     const SparseMat& A; 
     const SparseMat& B; 
     
+public: 
     struct Component {
         double weight;
         Eigen::VectorXi perm;
     };
     std::vector<Component> P_components;
 
-public:
     ACDCSolver(const SparseMat& a, const SparseMat& b, const Eigen::VectorXi& p0) 
         : A(a), B(b), N(a.rows()) {
         P_components.push_back({1.0, p0});
@@ -154,8 +143,9 @@ public:
         return score;
     }
 
-    MatrixRowMaj compute_gradient_internal(const SparseMat& B_T, const std::vector<Component>& components) {
-        MatrixRowMaj G = MatrixRowMaj::Zero(N, N);
+    // UPDATED: Now returns void and takes buffer as argument
+    void compute_gradient_internal(const SparseMat& B_T, const std::vector<Component>& components, MatrixRowMaj& G) {
+        G.setZero(); // Reset existing memory
         
         for (const auto& comp : components) {
             const Eigen::VectorXi& pi = comp.perm;
@@ -169,7 +159,6 @@ public:
                     double val_A = itA.value();
                     int u = pi[i]; 
 
-                    // Incoming edges (via B Transpose)
                     for (SparseMat::InnerIterator itB(B_T, u); itB; ++itB) {
                         G(j, itB.row()) += weight * std::min(val_A, itB.value());
                     }
@@ -183,7 +172,6 @@ public:
                     int i = itA.col(); 
                     int u = pi[i]; 
 
-                    // Outgoing edges
                     for (SparseMat::InnerIterator itB(B, u); itB; ++itB) {
                         double contribution = weight * std::min(itA.value(), itB.value());
                         #pragma omp atomic
@@ -192,18 +180,15 @@ public:
                 }
             }
         }
-        return G;
     }
 
     Eigen::VectorXi get_best_permutation() {
-        // Use RowMaj directly to avoid internal conversion in wrapper
         MatrixRowMaj P_dense = MatrixRowMaj::Zero(N, N);
         for(const auto& comp : P_components) {
+            #pragma omp parallel for
             for(int i=0; i<N; ++i) P_dense(i, comp.perm[i]) += comp.weight;
         }
 
-        // In-place Negation (Maximization -> Cost Minimization)
-        // No temporary matrix created here.
         #pragma omp parallel for collapse(2)
         for(int i=0; i<N; ++i) {
             for(int j=0; j<N; ++j) {
@@ -213,75 +198,66 @@ public:
         return solve_linear_assignment(P_dense);
     }
 
-    void frank_wolfe_step() {
+    // UPDATED: Accepts G_buffer
+    void frank_wolfe_step(MatrixRowMaj& G_buffer) {
         SparseMat B_T = B.transpose();
         
-        // 1. Compute Gradient
+        // 1. Compute Gradient (No allocation, writes to G_buffer)
         auto t_g = get_time();
-        MatrixRowMaj G = compute_gradient_internal(B_T, P_components);
+        compute_gradient_internal(B_T, P_components, G_buffer);
         print_elapsed(t_g, "   - Gradient");
 
-        // --- OPTION A: Preconditioned LAP ---
         std::cout << "   - Preconditioned LAP... " << std::flush;
         auto t_lap = get_time();
 
-        // Get Pi_t (Current Vertex)
+        // 2. Get Pi_t
         Eigen::VectorXi pi_t = get_best_permutation();
 
-        // Permute Gradient: Lambda = G * Pi_t^T
+        // 3. Compute Omega (Re-use Lambda memory)
         MatrixRowMaj Lambda(N, N);
         #pragma omp parallel for collapse(2)
         for(int i=0; i<N; ++i) {
             for(int j=0; j<N; ++j) {
-                Lambda(i, j) = G(i, pi_t[j]);
+                Lambda(i, j) = G_buffer(i, pi_t[j]);
             }
         }
 
-        // Shift: Omega = Lambda + diag(L) + diag(L)^T - Rows - Cols
         Eigen::VectorXd row_sums = Lambda.rowwise().sum();
         Eigen::VectorXd col_sums = Lambda.colwise().sum();
-        
-        // Cache Diagonal to safely alias Lambda as Omega
         Eigen::VectorXd diag_vals = Lambda.diagonal();
 
-        // REUSE MEMORY: We overwrite Lambda with Omega to save ~7GB RAM
-        MatrixRowMaj& Omega_ref = Lambda;
+        MatrixRowMaj& Omega_ref = Lambda; // Alias
 
         #pragma omp parallel for collapse(2)
         for(int i=0; i<N; ++i) {
             for(int j=0; j<N; ++j) {
-                // Diagonal-Decreasing preconditioner logic
                 double val = Omega_ref(i, j) + diag_vals(i) + diag_vals(j) - row_sums(i) - col_sums(j);
-                
-                // IMPORTANT: Negate in-place for LAPJV (Cost Minimization)
-                Omega_ref(i, j) = -val;
+                Omega_ref(i, j) = -val; // In-place negation
             }
         }
 
-        // Match: w = perfectMatching(-Omega)
-        // Pass reference to avoid copy
         Eigen::VectorXi omega_perm = solve_linear_assignment(Omega_ref);
 
-        // Unpermute: Q_t = P^w * Pi_t
         Eigen::VectorXi q_perm(N);
         #pragma omp parallel for
         for(int i=0; i<N; ++i) q_perm[i] = pi_t[omega_perm[i]];
         
         print_elapsed(t_lap, "Done");
 
-        // 3. Exact Line Search
-        // Note: Lambda/Omega memory is implicitly freed here as it goes out of scope,
-        // making room for G_Q.
+        // 4. Line Search
+        // We need a temporary buffer for G_Q, but G_buffer must remain alive.
+        // This is safe: Peak Memory = G_buffer (5GB) + G_Q (5GB) = 10GB.
+        MatrixRowMaj G_Q(N, N); 
         std::vector<Component> Q_comp = {{1.0, q_perm}};
-        MatrixRowMaj G_Q = compute_gradient_internal(B_T, Q_comp);
+        compute_gradient_internal(B_T, Q_comp, G_Q);
         
-        double tr_QT_GP = 0; for(int i=0; i<N; ++i) tr_QT_GP += G(i, q_perm[i]);
+        double tr_QT_GP = 0; for(int i=0; i<N; ++i) tr_QT_GP += G_buffer(i, q_perm[i]);
         double tr_QT_GQ = 0; for(int i=0; i<N; ++i) tr_QT_GQ += G_Q(i, q_perm[i]);
         
         double tr_PT_GP = 0, tr_PT_GQ = 0;
         for(const auto& comp : P_components) {
              double sub_p = 0, sub_q = 0;
-             for(int i=0; i<N; ++i) { sub_p += G(i, comp.perm[i]); sub_q += G_Q(i, comp.perm[i]); }
+             for(int i=0; i<N; ++i) { sub_p += G_buffer(i, comp.perm[i]); sub_q += G_Q(i, comp.perm[i]); }
              tr_PT_GP += comp.weight * sub_p;
              tr_PT_GQ += comp.weight * sub_q;
         }
@@ -307,8 +283,11 @@ public:
 struct GreedyCoupler {
     ACDCSolver& solver;
     int N;
+    MatrixRowMaj G_buffer; // Own buffer for greedy step
 
-    GreedyCoupler(ACDCSolver& s) : solver(s), N(s.N) {}
+    GreedyCoupler(ACDCSolver& s) : solver(s), N(s.N) {
+        G_buffer.resize(N, N);
+    }
 
     inline double H_term(double a, double B_ii, double B_jj, double B_ij, double B_ji) {
         return std::min(a, B_ii) + std::min(a, B_jj) - std::min(a, B_ij) - std::min(a, B_ji);
@@ -318,25 +297,26 @@ struct GreedyCoupler {
         SparseMat B_T = solver.B.transpose();
         std::vector<ACDCSolver::Component> single_comp = {{1.0, pi}};
         
-        // 1. Compute Gradient at Permutation Pi
-        MatrixRowMaj G = solver.compute_gradient_internal(B_T, single_comp);
+        // Pass buffer by reference (No allocation)
+        solver.compute_gradient_internal(B_T, single_comp, G_buffer);
         
         struct SwapMove { int i; int j; double gain; };
         SwapMove best_move = {-1, -1, 0.0};
         std::vector<double> B_diag(N);
         for(int k=0; k<N; ++k) B_diag[k] = solver.B.coeff(pi[k], pi[k]);
 
-        // 2. Evaluate Swaps
         std::cout << "   - [Discrete] Scanning pairs..." << std::flush;
         auto t_scan = get_time();
         
         #pragma omp parallel
         {
             SwapMove local_best = {-1, -1, 0.0};
-            #pragma omp for collapse(2) nowait
+            
+            // UPDATED: Uses schedule(dynamic) instead of collapse to fix compiler error
+            #pragma omp for schedule(dynamic) nowait
             for (int i = 0; i < N; ++i) {
                 for (int j = i + 1; j < N; ++j) {
-                    double delta = G(i, pi[j]) + G(j, pi[i]) - G(i, pi[i]) - G(j, pi[j]);
+                    double delta = G_buffer(i, pi[j]) + G_buffer(j, pi[i]) - G_buffer(i, pi[i]) - G_buffer(j, pi[j]);
                     
                     double A_ii = solver.A.coeff(i, i), A_jj = solver.A.coeff(j, j);
                     double A_ij = solver.A.coeff(i, j), A_ji = solver.A.coeff(j, i);
@@ -379,26 +359,37 @@ int main() {
     ACDCSolver solver(A, B, loader.initial_perm);
     std::cout << "Initial Score: " << (long)solver.calculate_score(loader.initial_perm) << std::endl;
 
+    // --- MAIN MEMORY BUFFER ---
+    // Allocated once here and reused.
+    MatrixRowMaj G_buffer(N, N);
+
     // --- Phase 1: Continuous Relaxation ---
     std::cout << "\n=== Phase 1: Continuous Relaxation ===" << std::endl;
     for (int t = 1; t <= 10; ++t) {
         std::cout << "Iter " << t << ": ";
-        solver.frank_wolfe_step();
+        solver.frank_wolfe_step(G_buffer);
         Eigen::VectorXi best_pi = solver.get_best_permutation();
         std::cout << " | Proj Score: " << (long)solver.calculate_score(best_pi) << std::endl;
     }
 
     // --- Phase 2: Discrete Search ---
     std::cout << "\n=== Phase 2: Discrete Search ===" << std::endl;
-    Eigen::VectorXi current_pi = solver.get_best_permutation();
-    GreedyCoupler greedy(solver);
-    
-    for(int k=0; k<5; ++k) {
-        double pre_score = solver.calculate_score(current_pi);
-        greedy.perform_pairwise_swap(current_pi);
-        if (solver.calculate_score(current_pi) <= pre_score) break;
-    }
-
+        Eigen::VectorXi current_pi = solver.get_best_permutation();
+        GreedyCoupler greedy(solver);
+        
+        int iter = 0;
+        while (true) { // Keep running until no improvement
+            double pre_score = solver.calculate_score(current_pi);
+            greedy.perform_pairwise_swap(current_pi);
+            double post_score = solver.calculate_score(current_pi);
+            
+            // If score didn't improve (or improved negligibly), stop.
+            if (post_score <= pre_score) {
+                std::cout << "   - Converged (No further beneficial swaps)." << std::endl;
+                break;
+            }
+            iter++;
+        }
     std::cout << "Final Score: " << (long)solver.calculate_score(current_pi) << std::endl;
     print_elapsed(t_total, "Total Execution");
     return 0;

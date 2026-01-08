@@ -1,0 +1,57 @@
+Initial Score: 5154247
+
+=== Phase 1: Continuous Relaxation ===
+Iter 1:    - Gradient took 1.9695 s
+   - Preconditioned LAP... Done took 26.2769 s
+   - Alpha: 1.0000
+ | Proj Score: 5803511
+Iter 2:    - Gradient took 3.3529 s
+   - Preconditioned LAP... Done took 28.9897 s
+   - Alpha: 0.5874
+ | Proj Score: 5816494
+Iter 3:    - Gradient took 4.9192 s
+   - Preconditioned LAP... Done took 32.5717 s
+   - Alpha: 0.7196
+ | Proj Score: 5838483
+Iter 4:    - Gradient took 6.5200 s
+   - Preconditioned LAP... Done took 34.9741 s
+   - Alpha: 0.3899
+ | Proj Score: 5838964
+Iter 5:    - Gradient took 8.1070 s
+   - Preconditioned LAP... Done took 38.2581 s
+   - Alpha: 0.4622
+ | Proj Score: 5844602
+Iter 6:    - Gradient took 9.6972 s
+   - Preconditioned LAP... Done took 38.6602 s
+   - Alpha: 0.2948
+ | Proj Score: 5843564
+Iter 7:    - Gradient took 11.7032 s
+   - Preconditioned LAP... Done took 41.2622 s
+   - Alpha: 0.3025
+ | Proj Score: 5843977
+Iter 8:    - Gradient took 12.8222 s
+   - Preconditioned LAP... Done took 41.5181 s
+   - Alpha: 0.2642
+ | Proj Score: 5845214
+Iter 9:    - Gradient took 14.5145 s
+   - Preconditioned LAP... Done took 42.7895 s
+   - Alpha: 0.2322
+ | Proj Score: 5846031
+Iter 10:    - Gradient took 16.1091 s
+   - Preconditioned LAP... Done took 42.1666 s
+   - Alpha: 0.2176
+ | Proj Score: 5846069
+
+=== Phase 2: Discrete Search ===
+   - [Discrete] Scanning pairs... Done took 2.4384 s
+   - [Discrete] SWAP: 16791 <-> 16936 Gain: 275.0000
+   - [Discrete] Scanning pairs... Done took 2.4390 s
+   - [Discrete] SWAP: 1417 <-> 5689 Gain: 233.0000
+   - [Discrete] Scanning pairs... Done took 2.4406 s
+   - [Discrete] SWAP: 3295 <-> 14410 Gain: 216.0000
+   - [Discrete] Scanning pairs... Done took 2.4396 s
+   - [Discrete] SWAP: 7455 <-> 18508 Gain: 209.0000
+   - [Discrete] Scanning pairs... Done took 2.4396 s
+   - [Discrete] SWAP: 16277 <-> 17210 Gain: 161.0000
+Final Score: 5847163
+Total Execution took 519.8763 s
