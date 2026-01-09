@@ -1,0 +1,1470 @@
+--- Configuration ---
+Initial Perm: data/vnc_matching_submission_benchmark_5154247.csv
+Male Graph:   data/male_connectome_graph.csv
+Female Graph: data/female_connectome_graph.csv
+Output File:  final_submission.csv
+---------------------
+Initial Score: 5154247
+
+=== Phase 1: Continuous Relaxation ===
+Iter 1:    - Gradient took 3.5901 s
+   - Preconditioned LAP... Done took 32.4714 s
+   - Alpha: 1.0000
+ | Proj Score: 5803511
+Iter 2:    - Gradient took 5.6536 s
+   - Preconditioned LAP... Done took 34.9717 s
+   - Alpha: 0.5874
+ | Proj Score: 5816494
+Iter 3:    - Gradient took 8.0244 s
+   - Preconditioned LAP... Done took 86.7109 s
+   - Alpha: 0.7200
+ | Proj Score: 5838495
+Iter 4:    - Gradient took 10.7148 s
+   - Preconditioned LAP... Done took 44.9785 s
+   - Alpha: 0.3892
+ | Proj Score: 5839416
+Iter 5:    - Gradient took 14.0906 s
+   - Preconditioned LAP... Done took 47.1793 s
+   - Alpha: 0.4635
+ | Proj Score: 5844642
+Iter 6:    - Gradient took 17.0335 s
+   - Preconditioned LAP... Done took 47.4726 s
+   - Alpha: 0.2934
+ | Proj Score: 5845049
+Iter 7:    - Gradient took 19.1129 s
+   - Preconditioned LAP... Done took 47.9107 s
+   - Alpha: 0.3022
+ | Proj Score: 5844106
+Iter 8:    - Gradient took 21.8324 s
+   - Preconditioned LAP... Done took 52.1268 s
+   - Alpha: 0.2528
+ | Proj Score: 5844394
+Iter 9:    - Gradient took 24.3181 s
+   - Preconditioned LAP... Done took 52.5141 s
+   - Alpha: 0.2238
+ | Proj Score: 5845436
+Iter 10:    - Gradient took 28.4511 s
+   - Preconditioned LAP... Done took 54.8238 s
+   - Alpha: 0.2182
+ | Proj Score: 5845029
+
+=== Phase 2: Discrete Search ===
+Starting Discrete Score: 5845029
+   - [Discrete] Scanning pairs... Done took 3.2493 s
+   - [Discrete] SWAP: 9601 <-> 10049 Gain: 302.0000
+   - [Iter 1] Total Score: 5845331 (+302)
+   - [Discrete] Scanning pairs... Done took 3.2662 s
+   - [Discrete] SWAP: 6449 <-> 13879 Gain: 244.0000
+   - [Iter 2] Total Score: 5845575 (+244)
+   - [Discrete] Scanning pairs... Done took 3.2685 s
+   - [Discrete] SWAP: 14235 <-> 16218 Gain: 210.0000
+   - [Iter 3] Total Score: 5845785 (+210)
+   - [Discrete] Scanning pairs... Done took 3.2591 s
+   - [Discrete] SWAP: 8267 <-> 18172 Gain: 169.0000
+   - [Iter 4] Total Score: 5845954 (+169)
+   - [Discrete] Scanning pairs... Done took 3.2606 s
+   - [Discrete] SWAP: 8191 <-> 18205 Gain: 157.0000
+   - [Iter 5] Total Score: 5846111 (+157)
+   - [Discrete] Scanning pairs... Done took 3.2702 s
+   - [Discrete] SWAP: 8713 <-> 14920 Gain: 131.0000
+   - [Iter 6] Total Score: 5846242 (+131)
+   - [Discrete] Scanning pairs... Done took 3.2567 s
+   - [Discrete] SWAP: 17210 <-> 18018 Gain: 125.0000
+   - [Iter 7] Total Score: 5846367 (+125)
+   - [Discrete] Scanning pairs... Done took 3.2674 s
+   - [Discrete] SWAP: 16996 <-> 17960 Gain: 121.0000
+   - [Iter 8] Total Score: 5846488 (+121)
+   - [Discrete] Scanning pairs... Done took 3.2597 s
+   - [Discrete] SWAP: 9601 <-> 10595 Gain: 113.0000
+   - [Iter 9] Total Score: 5846601 (+113)
+   - [Discrete] Scanning pairs... Done took 3.2771 s
+   - [Discrete] SWAP: 14337 <-> 15710 Gain: 111.0000
+   - [Iter 10] Total Score: 5846712 (+111)
+   - [Discrete] Scanning pairs... Done took 3.2636 s
+   - [Discrete] SWAP: 13936 <-> 14174 Gain: 102.0000
+   - [Iter 11] Total Score: 5846814 (+102)
+   - [Discrete] Scanning pairs... Done took 3.2642 s
+   - [Discrete] SWAP: 14800 <-> 16218 Gain: 101.0000
+   - [Iter 12] Total Score: 5846915 (+101)
+   - [Discrete] Scanning pairs... Done took 3.2671 s
+   - [Discrete] SWAP: 346 <-> 881 Gain: 94.0000
+   - [Iter 13] Total Score: 5847009 (+94)
+   - [Discrete] Scanning pairs... Done took 3.2648 s
+   - [Discrete] SWAP: 16648 <-> 18379 Gain: 90.0000
+   - [Iter 14] Total Score: 5847099 (+90)
+   - [Discrete] Scanning pairs... Done took 3.3098 s
+   - [Discrete] SWAP: 12235 <-> 12588 Gain: 90.0000
+   - [Iter 15] Total Score: 5847189 (+90)
+   - [Discrete] Scanning pairs... Done took 3.3121 s
+   - [Discrete] SWAP: 10049 <-> 17931 Gain: 87.0000
+   - [Iter 16] Total Score: 5847276 (+87)
+   - [Discrete] Scanning pairs... Done took 3.3074 s
+   - [Discrete] SWAP: 14920 <-> 17274 Gain: 78.0000
+   - [Iter 17] Total Score: 5847354 (+78)
+   - [Discrete] Scanning pairs... Done took 3.3094 s
+   - [Discrete] SWAP: 8170 <-> 13342 Gain: 74.0000
+   - [Iter 18] Total Score: 5847428 (+74)
+   - [Discrete] Scanning pairs... Done took 3.3074 s
+   - [Discrete] SWAP: 17210 <-> 18003 Gain: 74.0000
+   - [Iter 19] Total Score: 5847502 (+74)
+   - [Discrete] Scanning pairs... Done took 3.3104 s
+   - [Discrete] SWAP: 8713 <-> 16277 Gain: 74.0000
+   - [Iter 20] Total Score: 5847576 (+74)
+   - [Discrete] Scanning pairs... Done took 3.3048 s
+   - [Discrete] SWAP: 8713 <-> 10636 Gain: 70.0000
+   - [Iter 21] Total Score: 5847646 (+70)
+   - [Discrete] Scanning pairs... Done took 3.2897 s
+   - [Discrete] SWAP: 9601 <-> 18379 Gain: 68.0000
+   - [Iter 22] Total Score: 5847714 (+68)
+   - [Discrete] Scanning pairs... Done took 3.2364 s
+   - [Discrete] SWAP: 14605 <-> 14800 Gain: 67.0000
+   - [Iter 23] Total Score: 5847781 (+67)
+   - [Discrete] Scanning pairs... Done took 3.2327 s
+   - [Discrete] SWAP: 8191 <-> 14121 Gain: 61.0000
+   - [Iter 24] Total Score: 5847842 (+61)
+   - [Discrete] Scanning pairs... Done took 3.2368 s
+   - [Discrete] SWAP: 16218 <-> 17598 Gain: 58.0000
+   - [Iter 25] Total Score: 5847900 (+58)
+   - [Discrete] Scanning pairs... Done took 3.2322 s
+   - [Discrete] SWAP: 9601 <-> 14059 Gain: 54.0000
+   - [Iter 26] Total Score: 5847954 (+54)
+   - [Discrete] Scanning pairs... Done took 3.3493 s
+   - [Discrete] SWAP: 12221 <-> 13936 Gain: 53.0000
+   - [Iter 27] Total Score: 5848007 (+53)
+   - [Discrete] Scanning pairs... Done took 3.2500 s
+   - [Discrete] SWAP: 11421 <-> 14605 Gain: 47.0000
+   - [Iter 28] Total Score: 5848054 (+47)
+   - [Discrete] Scanning pairs... Done took 3.2543 s
+   - [Discrete] SWAP: 7457 <-> 16616 Gain: 46.0000
+   - [Iter 29] Total Score: 5848100 (+46)
+   - [Discrete] Scanning pairs... Done took 3.2495 s
+   - [Discrete] SWAP: 13156 <-> 14174 Gain: 46.0000
+   - [Iter 30] Total Score: 5848146 (+46)
+   - [Discrete] Scanning pairs... Done took 3.2509 s
+   - [Discrete] SWAP: 6068 <-> 12221 Gain: 38.0000
+   - [Iter 31] Total Score: 5848184 (+38)
+   - [Discrete] Scanning pairs... Done took 3.2485 s
+   - [Discrete] SWAP: 11027 <-> 18482 Gain: 34.0000
+   - [Iter 32] Total Score: 5848218 (+34)
+   - [Discrete] Scanning pairs... Done took 3.2981 s
+   - [Discrete] SWAP: 5786 <-> 7427 Gain: 32.0000
+   - [Iter 33] Total Score: 5848250 (+32)
+   - [Discrete] Scanning pairs... Done took 3.2510 s
+   - [Discrete] SWAP: 185 <-> 10903 Gain: 32.0000
+   - [Iter 34] Total Score: 5848282 (+32)
+   - [Discrete] Scanning pairs... Done took 3.2549 s
+   - [Discrete] SWAP: 14031 <-> 14857 Gain: 32.0000
+   - [Iter 35] Total Score: 5848314 (+32)
+   - [Discrete] Scanning pairs... Done took 3.2522 s
+   - [Discrete] SWAP: 14031 <-> 14334 Gain: 34.0000
+   - [Iter 36] Total Score: 5848348 (+34)
+   - [Discrete] Scanning pairs... Done took 3.2531 s
+   - [Discrete] SWAP: 254 <-> 17486 Gain: 30.0000
+   - [Iter 37] Total Score: 5848378 (+30)
+   - [Discrete] Scanning pairs... Done took 3.2582 s
+   - [Discrete] SWAP: 12721 <-> 13936 Gain: 30.0000
+   - [Iter 38] Total Score: 5848408 (+30)
+   - [Discrete] Scanning pairs... Done took 3.2566 s
+   - [Discrete] SWAP: 457 <-> 935 Gain: 29.0000
+   - [Iter 39] Total Score: 5848437 (+29)
+   - [Discrete] Scanning pairs... Done took 3.2634 s
+   - [Discrete] SWAP: 12588 <-> 17827 Gain: 28.0000
+   - [Iter 40] Total Score: 5848465 (+28)
+   - [Discrete] Scanning pairs... Done took 3.2576 s
+   - [Discrete] SWAP: 15846 <-> 18172 Gain: 28.0000
+   - [Iter 41] Total Score: 5848493 (+28)
+   - [Discrete] Scanning pairs... Done took 3.2641 s
+   - [Discrete] SWAP: 8503 <-> 17274 Gain: 27.0000
+   - [Iter 42] Total Score: 5848520 (+27)
+   - [Discrete] Scanning pairs... Done took 3.2630 s
+   - [Discrete] SWAP: 7457 <-> 17665 Gain: 27.0000
+   - [Iter 43] Total Score: 5848547 (+27)
+   - [Discrete] Scanning pairs... Done took 3.2728 s
+   - [Discrete] SWAP: 15996 <-> 17464 Gain: 26.0000
+   - [Iter 44] Total Score: 5848573 (+26)
+   - [Discrete] Scanning pairs... Done took 3.2584 s
+   - [Discrete] SWAP: 14235 <-> 14525 Gain: 24.0000
+   - [Iter 45] Total Score: 5848597 (+24)
+   - [Discrete] Scanning pairs... Done took 3.2617 s
+   - [Discrete] SWAP: 11949 <-> 18018 Gain: 24.0000
+   - [Iter 46] Total Score: 5848621 (+24)
+   - [Discrete] Scanning pairs... Done took 3.2605 s
+   - [Discrete] SWAP: 740 <-> 8713 Gain: 22.0000
+   - [Iter 47] Total Score: 5848643 (+22)
+   - [Discrete] Scanning pairs... Done took 3.2652 s
+   - [Discrete] SWAP: 13342 <-> 15846 Gain: 22.0000
+   - [Iter 48] Total Score: 5848665 (+22)
+   - [Discrete] Scanning pairs... Done took 3.2817 s
+   - [Discrete] SWAP: 457 <-> 13342 Gain: 23.0000
+   - [Iter 49] Total Score: 5848688 (+23)
+   - [Discrete] Scanning pairs... Done took 3.2670 s
+   - [Discrete] SWAP: 3171 <-> 11046 Gain: 22.0000
+   - [Iter 50] Total Score: 5848710 (+22)
+   - [Discrete] Scanning pairs... Done took 3.2529 s
+   - [Discrete] SWAP: 9601 <-> 17616 Gain: 22.0000
+   - [Iter 51] Total Score: 5848732 (+22)
+   - [Discrete] Scanning pairs... Done took 3.2477 s
+   - [Discrete] SWAP: 2012 <-> 9081 Gain: 21.0000
+   - [Iter 52] Total Score: 5848753 (+21)
+   - [Discrete] Scanning pairs... Done took 3.2508 s
+   - [Discrete] SWAP: 3752 <-> 10793 Gain: 21.0000
+   - [Iter 53] Total Score: 5848774 (+21)
+   - [Discrete] Scanning pairs... Done took 3.2518 s
+   - [Discrete] SWAP: 17108 <-> 18379 Gain: 20.0000
+   - [Iter 54] Total Score: 5848794 (+20)
+   - [Discrete] Scanning pairs... Done took 3.2534 s
+   - [Discrete] SWAP: 7427 <-> 10903 Gain: 18.0000
+   - [Iter 55] Total Score: 5848812 (+18)
+   - [Discrete] Scanning pairs... Done took 3.2795 s
+   - [Discrete] SWAP: 2837 <-> 13864 Gain: 18.0000
+   - [Iter 56] Total Score: 5848830 (+18)
+   - [Discrete] Scanning pairs... Done took 3.2611 s
+   - [Discrete] SWAP: 2033 <-> 17090 Gain: 17.0000
+   - [Iter 57] Total Score: 5848847 (+17)
+   - [Discrete] Scanning pairs... Done took 3.2490 s
+   - [Discrete] SWAP: 8845 <-> 9954 Gain: 17.0000
+   - [Iter 58] Total Score: 5848864 (+17)
+   - [Discrete] Scanning pairs... Done took 3.2446 s
+   - [Discrete] SWAP: 2254 <-> 9942 Gain: 16.0000
+   - [Iter 59] Total Score: 5848880 (+16)
+   - [Discrete] Scanning pairs... Done took 3.2472 s
+   - [Discrete] SWAP: 13646 <-> 16446 Gain: 16.0000
+   - [Iter 60] Total Score: 5848896 (+16)
+   - [Discrete] Scanning pairs... Done took 3.2500 s
+   - [Discrete] SWAP: 6168 <-> 13226 Gain: 16.0000
+   - [Iter 61] Total Score: 5848912 (+16)
+   - [Discrete] Scanning pairs... Done took 3.2495 s
+   - [Discrete] SWAP: 14525 <-> 16516 Gain: 16.0000
+   - [Iter 62] Total Score: 5848928 (+16)
+   - [Discrete] Scanning pairs... Done took 3.2496 s
+   - [Discrete] SWAP: 2717 <-> 11565 Gain: 16.0000
+   - [Iter 63] Total Score: 5848944 (+16)
+   - [Discrete] Scanning pairs... Done took 3.2514 s
+   - [Discrete] SWAP: 772 <-> 8565 Gain: 15.0000
+   - [Iter 64] Total Score: 5848959 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2626 s
+   - [Discrete] SWAP: 6148 <-> 13017 Gain: 15.0000
+   - [Iter 65] Total Score: 5848974 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2499 s
+   - [Discrete] SWAP: 3392 <-> 17489 Gain: 15.0000
+   - [Iter 66] Total Score: 5848989 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2503 s
+   - [Discrete] SWAP: 2023 <-> 16519 Gain: 15.0000
+   - [Iter 67] Total Score: 5849004 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2447 s
+   - [Discrete] SWAP: 17019 <-> 18302 Gain: 15.0000
+   - [Iter 68] Total Score: 5849019 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2563 s
+   - [Discrete] SWAP: 14031 <-> 14053 Gain: 15.0000
+   - [Iter 69] Total Score: 5849034 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2472 s
+   - [Discrete] SWAP: 844 <-> 968 Gain: 15.0000
+   - [Iter 70] Total Score: 5849049 (+15)
+   - [Discrete] Scanning pairs... Done took 3.2436 s
+   - [Discrete] SWAP: 7377 <-> 13510 Gain: 14.0000
+   - [Iter 71] Total Score: 5849063 (+14)
+   - [Discrete] Scanning pairs... Done took 3.2428 s
+   - [Discrete] SWAP: 13879 <-> 13974 Gain: 14.0000
+   - [Iter 72] Total Score: 5849077 (+14)
+   - [Discrete] Scanning pairs... Done took 3.2452 s
+   - [Discrete] SWAP: 7074 <-> 7292 Gain: 14.0000
+   - [Iter 73] Total Score: 5849091 (+14)
+   - [Discrete] Scanning pairs... Done took 3.2481 s
+   - [Discrete] SWAP: 14174 <-> 14407 Gain: 14.0000
+   - [Iter 74] Total Score: 5849105 (+14)
+   - [Discrete] Scanning pairs... Done took 3.2617 s
+   - [Discrete] SWAP: 8982 <-> 12235 Gain: 13.0000
+   - [Iter 75] Total Score: 5849118 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2551 s
+   - [Discrete] SWAP: 13553 <-> 16277 Gain: 13.0000
+   - [Iter 76] Total Score: 5849131 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2484 s
+   - [Discrete] SWAP: 5291 <-> 11875 Gain: 13.0000
+   - [Iter 77] Total Score: 5849144 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2465 s
+   - [Discrete] SWAP: 11012 <-> 15221 Gain: 13.0000
+   - [Iter 78] Total Score: 5849157 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2467 s
+   - [Discrete] SWAP: 8170 <-> 8271 Gain: 13.0000
+   - [Iter 79] Total Score: 5849170 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2488 s
+   - [Discrete] SWAP: 11987 <-> 17011 Gain: 13.0000
+   - [Iter 80] Total Score: 5849183 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2497 s
+   - [Discrete] SWAP: 4426 <-> 18055 Gain: 13.0000
+   - [Iter 81] Total Score: 5849196 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2482 s
+   - [Discrete] SWAP: 16830 <-> 17973 Gain: 13.0000
+   - [Iter 82] Total Score: 5849209 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2465 s
+   - [Discrete] SWAP: 17973 <-> 18479 Gain: 13.0000
+   - [Iter 83] Total Score: 5849222 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2492 s
+   - [Discrete] SWAP: 21 <-> 15846 Gain: 13.0000
+   - [Iter 84] Total Score: 5849235 (+13)
+   - [Discrete] Scanning pairs... Done took 3.2466 s
+   - [Discrete] SWAP: 4477 <-> 16440 Gain: 12.0000
+   - [Iter 85] Total Score: 5849247 (+12)
+   - [Discrete] Scanning pairs... Done took 3.2510 s
+   - [Discrete] SWAP: 8469 <-> 17274 Gain: 12.0000
+   - [Iter 86] Total Score: 5849259 (+12)
+   - [Discrete] Scanning pairs... Done took 3.2498 s
+   - [Discrete] SWAP: 15796 <-> 17743 Gain: 12.0000
+   - [Iter 87] Total Score: 5849271 (+12)
+   - [Discrete] Scanning pairs... Done took 3.2471 s
+   - [Discrete] SWAP: 4260 <-> 11308 Gain: 12.0000
+   - [Iter 88] Total Score: 5849283 (+12)
+   - [Discrete] Scanning pairs... Done took 3.3003 s
+   - [Discrete] SWAP: 1797 <-> 10469 Gain: 12.0000
+   - [Iter 89] Total Score: 5849295 (+12)
+   - [Discrete] Scanning pairs... Done took 3.2454 s
+   - [Discrete] SWAP: 6501 <-> 12868 Gain: 11.0000
+   - [Iter 90] Total Score: 5849306 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2462 s
+   - [Discrete] SWAP: 7427 <-> 8854 Gain: 11.0000
+   - [Iter 91] Total Score: 5849317 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2735 s
+   - [Discrete] SWAP: 3293 <-> 10798 Gain: 11.0000
+   - [Iter 92] Total Score: 5849328 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2617 s
+   - [Discrete] SWAP: 4104 <-> 10580 Gain: 11.0000
+   - [Iter 93] Total Score: 5849339 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2537 s
+   - [Discrete] SWAP: 8914 <-> 14289 Gain: 11.0000
+   - [Iter 94] Total Score: 5849350 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2531 s
+   - [Discrete] SWAP: 11768 <-> 15047 Gain: 11.0000
+   - [Iter 95] Total Score: 5849361 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2778 s
+   - [Discrete] SWAP: 13158 <-> 15881 Gain: 11.0000
+   - [Iter 96] Total Score: 5849372 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2778 s
+   - [Discrete] SWAP: 13092 <-> 17267 Gain: 10.0000
+   - [Iter 97] Total Score: 5849382 (+10)
+   - [Discrete] Scanning pairs... Done took 3.2820 s
+   - [Discrete] SWAP: 13436 <-> 13609 Gain: 10.0000
+   - [Iter 98] Total Score: 5849392 (+10)
+   - [Discrete] Scanning pairs... Done took 3.2746 s
+   - [Discrete] SWAP: 8964 <-> 9257 Gain: 10.0000
+   - [Iter 99] Total Score: 5849402 (+10)
+   - [Discrete] Scanning pairs... Done took 3.2673 s
+   - [Discrete] SWAP: 5402 <-> 15354 Gain: 10.0000
+   - [Iter 100] Total Score: 5849412 (+10)
+   - [Discrete] Scanning pairs... Done took 3.2615 s
+   - [Discrete] SWAP: 85 <-> 8078 Gain: 12.0000
+   - [Iter 101] Total Score: 5849424 (+12)
+   - [Discrete] Scanning pairs... Done took 3.2736 s
+   - [Discrete] SWAP: 12550 <-> 18018 Gain: 10.0000
+   - [Iter 102] Total Score: 5849434 (+10)
+   - [Discrete] Scanning pairs... Done took 3.2718 s
+   - [Discrete] SWAP: 12550 <-> 18222 Gain: 17.0000
+   - [Iter 103] Total Score: 5849451 (+17)
+   - [Discrete] Scanning pairs... Done took 3.2716 s
+   - [Discrete] SWAP: 11482 <-> 11492 Gain: 11.0000
+   - [Iter 104] Total Score: 5849462 (+11)
+   - [Discrete] Scanning pairs... Done took 3.2771 s
+   - [Discrete] SWAP: 14920 <-> 15278 Gain: 12.0000
+   - [Iter 105] Total Score: 5849474 (+12)
+   - [Discrete] Scanning pairs... Done took 3.3144 s
+   - [Discrete] SWAP: 18003 <-> 18172 Gain: 11.0000
+   - [Iter 106] Total Score: 5849485 (+11)
+   - [Discrete] Scanning pairs... Done took 3.3226 s
+   - [Discrete] SWAP: 7756 <-> 18003 Gain: 25.0000
+   - [Iter 107] Total Score: 5849510 (+25)
+   - [Discrete] Scanning pairs... Done took 3.3093 s
+   - [Discrete] SWAP: 10207 <-> 17446 Gain: 10.0000
+   - [Iter 108] Total Score: 5849520 (+10)
+   - [Discrete] Scanning pairs... Done took 3.3131 s
+   - [Discrete] SWAP: 4683 <-> 10801 Gain: 10.0000
+   - [Iter 109] Total Score: 5849530 (+10)
+   - [Discrete] Scanning pairs... Done took 3.3121 s
+   - [Discrete] SWAP: 4868 <-> 11933 Gain: 10.0000
+   - [Iter 110] Total Score: 5849540 (+10)
+   - [Discrete] Scanning pairs... Done took 3.3169 s
+   - [Discrete] SWAP: 15404 <-> 16079 Gain: 10.0000
+   - [Iter 111] Total Score: 5849550 (+10)
+   - [Discrete] Scanning pairs... Done took 3.3115 s
+   - [Discrete] SWAP: 6055 <-> 12082 Gain: 9.0000
+   - [Iter 112] Total Score: 5849559 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3130 s
+   - [Discrete] SWAP: 12642 <-> 13936 Gain: 9.0000
+   - [Iter 113] Total Score: 5849568 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3145 s
+   - [Discrete] SWAP: 15593 <-> 16226 Gain: 9.0000
+   - [Iter 114] Total Score: 5849577 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3153 s
+   - [Discrete] SWAP: 6252 <-> 12390 Gain: 9.0000
+   - [Iter 115] Total Score: 5849586 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3201 s
+   - [Discrete] SWAP: 2300 <-> 10707 Gain: 9.0000
+   - [Iter 116] Total Score: 5849595 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3100 s
+   - [Discrete] SWAP: 7436 <-> 13377 Gain: 9.0000
+   - [Iter 117] Total Score: 5849604 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3202 s
+   - [Discrete] SWAP: 9378 <-> 14484 Gain: 9.0000
+   - [Iter 118] Total Score: 5849613 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3168 s
+   - [Discrete] SWAP: 740 <-> 12642 Gain: 8.0000
+   - [Iter 119] Total Score: 5849621 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3169 s
+   - [Discrete] SWAP: 740 <-> 11307 Gain: 16.0000
+   - [Iter 120] Total Score: 5849637 (+16)
+   - [Discrete] Scanning pairs... Done took 3.3202 s
+   - [Discrete] SWAP: 2416 <-> 9978 Gain: 8.0000
+   - [Iter 121] Total Score: 5849645 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3186 s
+   - [Discrete] SWAP: 4747 <-> 11780 Gain: 8.0000
+   - [Iter 122] Total Score: 5849653 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3169 s
+   - [Discrete] SWAP: 11371 <-> 18450 Gain: 8.0000
+   - [Iter 123] Total Score: 5849661 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3176 s
+   - [Discrete] SWAP: 8982 <-> 17397 Gain: 8.0000
+   - [Iter 124] Total Score: 5849669 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3183 s
+   - [Discrete] SWAP: 16634 <-> 18497 Gain: 8.0000
+   - [Iter 125] Total Score: 5849677 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3161 s
+   - [Discrete] SWAP: 13093 <-> 16162 Gain: 8.0000
+   - [Iter 126] Total Score: 5849685 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3219 s
+   - [Discrete] SWAP: 13761 <-> 18205 Gain: 14.0000
+   - [Iter 127] Total Score: 5849699 (+14)
+   - [Discrete] Scanning pairs... Done took 3.3123 s
+   - [Discrete] SWAP: 1420 <-> 17665 Gain: 8.0000
+   - [Iter 128] Total Score: 5849707 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3187 s
+   - [Discrete] SWAP: 11402 <-> 13301 Gain: 8.0000
+   - [Iter 129] Total Score: 5849715 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3147 s
+   - [Discrete] SWAP: 4456 <-> 14751 Gain: 8.0000
+   - [Iter 130] Total Score: 5849723 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3115 s
+   - [Discrete] SWAP: 9499 <-> 9890 Gain: 8.0000
+   - [Iter 131] Total Score: 5849731 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3102 s
+   - [Discrete] SWAP: 11216 <-> 14948 Gain: 8.0000
+   - [Iter 132] Total Score: 5849739 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3112 s
+   - [Discrete] SWAP: 10299 <-> 16834 Gain: 8.0000
+   - [Iter 133] Total Score: 5849747 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3177 s
+   - [Discrete] SWAP: 11231 <-> 11254 Gain: 8.0000
+   - [Iter 134] Total Score: 5849755 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3155 s
+   - [Discrete] SWAP: 13761 <-> 14369 Gain: 8.0000
+   - [Iter 135] Total Score: 5849763 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3105 s
+   - [Discrete] SWAP: 4468 <-> 10777 Gain: 7.0000
+   - [Iter 136] Total Score: 5849770 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3152 s
+   - [Discrete] SWAP: 10478 <-> 14656 Gain: 7.0000
+   - [Iter 137] Total Score: 5849777 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3124 s
+   - [Discrete] SWAP: 3748 <-> 18266 Gain: 7.0000
+   - [Iter 138] Total Score: 5849784 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3153 s
+   - [Discrete] SWAP: 8257 <-> 18497 Gain: 7.0000
+   - [Iter 139] Total Score: 5849791 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3090 s
+   - [Discrete] SWAP: 12642 <-> 14857 Gain: 7.0000
+   - [Iter 140] Total Score: 5849798 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3080 s
+   - [Discrete] SWAP: 11897 <-> 15263 Gain: 7.0000
+   - [Iter 141] Total Score: 5849805 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3194 s
+   - [Discrete] SWAP: 10651 <-> 11482 Gain: 7.0000
+   - [Iter 142] Total Score: 5849812 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3108 s
+   - [Discrete] SWAP: 2260 <-> 2264 Gain: 7.0000
+   - [Iter 143] Total Score: 5849819 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3107 s
+   - [Discrete] SWAP: 15219 <-> 18379 Gain: 7.0000
+   - [Iter 144] Total Score: 5849826 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3110 s
+   - [Discrete] SWAP: 10255 <-> 18379 Gain: 8.0000
+   - [Iter 145] Total Score: 5849834 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3087 s
+   - [Discrete] SWAP: 10255 <-> 17943 Gain: 8.0000
+   - [Iter 146] Total Score: 5849842 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3122 s
+   - [Discrete] SWAP: 4755 <-> 12343 Gain: 7.0000
+   - [Iter 147] Total Score: 5849849 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3088 s
+   - [Discrete] SWAP: 4400 <-> 11818 Gain: 7.0000
+   - [Iter 148] Total Score: 5849856 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3042 s
+   - [Discrete] SWAP: 8201 <-> 17002 Gain: 7.0000
+   - [Iter 149] Total Score: 5849863 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3092 s
+   - [Discrete] SWAP: 7741 <-> 13822 Gain: 7.0000
+   - [Iter 150] Total Score: 5849870 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3103 s
+   - [Discrete] SWAP: 4431 <-> 11351 Gain: 8.0000
+   - [Iter 151] Total Score: 5849878 (+8)
+   - [Discrete] Scanning pairs... Done took 3.3119 s
+   - [Discrete] SWAP: 12680 <-> 12844 Gain: 7.0000
+   - [Iter 152] Total Score: 5849885 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3127 s
+   - [Discrete] SWAP: 1424 <-> 10830 Gain: 7.0000
+   - [Iter 153] Total Score: 5849892 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3167 s
+   - [Discrete] SWAP: 8890 <-> 10636 Gain: 7.0000
+   - [Iter 154] Total Score: 5849899 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3174 s
+   - [Discrete] SWAP: 10539 <-> 17945 Gain: 7.0000
+   - [Iter 155] Total Score: 5849906 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3153 s
+   - [Discrete] SWAP: 16358 <-> 16980 Gain: 7.0000
+   - [Iter 156] Total Score: 5849913 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3126 s
+   - [Discrete] SWAP: 13700 <-> 16492 Gain: 7.0000
+   - [Iter 157] Total Score: 5849920 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3165 s
+   - [Discrete] SWAP: 14008 <-> 16631 Gain: 7.0000
+   - [Iter 158] Total Score: 5849927 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3050 s
+   - [Discrete] SWAP: 8103 <-> 14031 Gain: 7.0000
+   - [Iter 159] Total Score: 5849934 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3142 s
+   - [Discrete] SWAP: 816 <-> 8964 Gain: 6.0000
+   - [Iter 160] Total Score: 5849940 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3105 s
+   - [Discrete] SWAP: 169 <-> 8267 Gain: 6.0000
+   - [Iter 161] Total Score: 5849946 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3106 s
+   - [Discrete] SWAP: 4410 <-> 5362 Gain: 6.0000
+   - [Iter 162] Total Score: 5849952 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 5943 <-> 6422 Gain: 6.0000
+   - [Iter 163] Total Score: 5849958 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3081 s
+   - [Discrete] SWAP: 14435 <-> 14690 Gain: 6.0000
+   - [Iter 164] Total Score: 5849964 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3141 s
+   - [Discrete] SWAP: 3845 <-> 10262 Gain: 6.0000
+   - [Iter 165] Total Score: 5849970 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3102 s
+   - [Discrete] SWAP: 9316 <-> 14531 Gain: 6.0000
+   - [Iter 166] Total Score: 5849976 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3063 s
+   - [Discrete] SWAP: 4635 <-> 11173 Gain: 6.0000
+   - [Iter 167] Total Score: 5849982 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3104 s
+   - [Discrete] SWAP: 14331 <-> 14466 Gain: 6.0000
+   - [Iter 168] Total Score: 5849988 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3068 s
+   - [Discrete] SWAP: 2450 <-> 12659 Gain: 6.0000
+   - [Iter 169] Total Score: 5849994 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3065 s
+   - [Discrete] SWAP: 10336 <-> 10595 Gain: 6.0000
+   - [Iter 170] Total Score: 5850000 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3053 s
+   - [Discrete] SWAP: 12158 <-> 15146 Gain: 6.0000
+   - [Iter 171] Total Score: 5850006 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3074 s
+   - [Discrete] SWAP: 7427 <-> 16706 Gain: 6.0000
+   - [Iter 172] Total Score: 5850012 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3059 s
+   - [Discrete] SWAP: 11014 <-> 15207 Gain: 6.0000
+   - [Iter 173] Total Score: 5850018 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3039 s
+   - [Discrete] SWAP: 15219 <-> 18478 Gain: 6.0000
+   - [Iter 174] Total Score: 5850024 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3095 s
+   - [Discrete] SWAP: 17178 <-> 18048 Gain: 6.0000
+   - [Iter 175] Total Score: 5850030 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3106 s
+   - [Discrete] SWAP: 14826 <-> 16939 Gain: 6.0000
+   - [Iter 176] Total Score: 5850036 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3093 s
+   - [Discrete] SWAP: 13381 <-> 17204 Gain: 6.0000
+   - [Iter 177] Total Score: 5850042 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3359 s
+   - [Discrete] SWAP: 18193 <-> 18435 Gain: 6.0000
+   - [Iter 178] Total Score: 5850048 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3155 s
+   - [Discrete] SWAP: 3903 <-> 16069 Gain: 5.0000
+   - [Iter 179] Total Score: 5850053 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3167 s
+   - [Discrete] SWAP: 547 <-> 8534 Gain: 5.0000
+   - [Iter 180] Total Score: 5850058 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3182 s
+   - [Discrete] SWAP: 5689 <-> 12221 Gain: 5.0000
+   - [Iter 181] Total Score: 5850063 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3027 s
+   - [Discrete] SWAP: 12221 <-> 15944 Gain: 6.0000
+   - [Iter 182] Total Score: 5850069 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3061 s
+   - [Discrete] SWAP: 12231 <-> 15626 Gain: 5.0000
+   - [Iter 183] Total Score: 5850074 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3108 s
+   - [Discrete] SWAP: 12724 <-> 14857 Gain: 5.0000
+   - [Iter 184] Total Score: 5850079 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3115 s
+   - [Discrete] SWAP: 746 <-> 17368 Gain: 5.0000
+   - [Iter 185] Total Score: 5850084 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3070 s
+   - [Discrete] SWAP: 4209 <-> 13727 Gain: 5.0000
+   - [Iter 186] Total Score: 5850089 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3074 s
+   - [Discrete] SWAP: 8035 <-> 13968 Gain: 5.0000
+   - [Iter 187] Total Score: 5850094 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3037 s
+   - [Discrete] SWAP: 9593 <-> 14441 Gain: 5.0000
+   - [Iter 188] Total Score: 5850099 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3067 s
+   - [Discrete] SWAP: 1977 <-> 11360 Gain: 5.0000
+   - [Iter 189] Total Score: 5850104 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3088 s
+   - [Discrete] SWAP: 9469 <-> 15081 Gain: 5.0000
+   - [Iter 190] Total Score: 5850109 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3092 s
+   - [Discrete] SWAP: 12394 <-> 17550 Gain: 5.0000
+   - [Iter 191] Total Score: 5850114 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3129 s
+   - [Discrete] SWAP: 457 <-> 16605 Gain: 5.0000
+   - [Iter 192] Total Score: 5850119 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3075 s
+   - [Discrete] SWAP: 9231 <-> 14859 Gain: 5.0000
+   - [Iter 193] Total Score: 5850124 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3065 s
+   - [Discrete] SWAP: 9109 <-> 15528 Gain: 5.0000
+   - [Iter 194] Total Score: 5850129 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3078 s
+   - [Discrete] SWAP: 1323 <-> 8906 Gain: 5.0000
+   - [Iter 195] Total Score: 5850134 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3061 s
+   - [Discrete] SWAP: 12079 <-> 15839 Gain: 5.0000
+   - [Iter 196] Total Score: 5850139 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3066 s
+   - [Discrete] SWAP: 17235 <-> 18363 Gain: 5.0000
+   - [Iter 197] Total Score: 5850144 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3011 s
+   - [Discrete] SWAP: 11562 <-> 18205 Gain: 5.0000
+   - [Iter 198] Total Score: 5850149 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3026 s
+   - [Discrete] SWAP: 6439 <-> 17514 Gain: 5.0000
+   - [Iter 199] Total Score: 5850154 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3058 s
+   - [Discrete] SWAP: 8156 <-> 18508 Gain: 5.0000
+   - [Iter 200] Total Score: 5850159 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 8700 <-> 8742 Gain: 4.0000
+   - [Iter 201] Total Score: 5850163 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3100 s
+   - [Discrete] SWAP: 2543 <-> 12004 Gain: 4.0000
+   - [Iter 202] Total Score: 5850167 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3058 s
+   - [Discrete] SWAP: 701 <-> 8668 Gain: 4.0000
+   - [Iter 203] Total Score: 5850171 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3069 s
+   - [Discrete] SWAP: 5086 <-> 5145 Gain: 4.0000
+   - [Iter 204] Total Score: 5850175 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 4502 <-> 12727 Gain: 4.0000
+   - [Iter 205] Total Score: 5850179 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3038 s
+   - [Discrete] SWAP: 10792 <-> 15351 Gain: 4.0000
+   - [Iter 206] Total Score: 5850183 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3009 s
+   - [Discrete] SWAP: 7594 <-> 17488 Gain: 4.0000
+   - [Iter 207] Total Score: 5850187 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3052 s
+   - [Discrete] SWAP: 18110 <-> 18177 Gain: 4.0000
+   - [Iter 208] Total Score: 5850191 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3025 s
+   - [Discrete] SWAP: 790 <-> 8688 Gain: 4.0000
+   - [Iter 209] Total Score: 5850195 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3029 s
+   - [Discrete] SWAP: 6265 <-> 15676 Gain: 4.0000
+   - [Iter 210] Total Score: 5850199 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3068 s
+   - [Discrete] SWAP: 6876 <-> 15863 Gain: 4.0000
+   - [Iter 211] Total Score: 5850203 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3032 s
+   - [Discrete] SWAP: 10903 <-> 17463 Gain: 4.0000
+   - [Iter 212] Total Score: 5850207 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3001 s
+   - [Discrete] SWAP: 16288 <-> 17463 Gain: 9.0000
+   - [Iter 213] Total Score: 5850216 (+9)
+   - [Discrete] Scanning pairs... Done took 3.2964 s
+   - [Discrete] SWAP: 11688 <-> 15993 Gain: 4.0000
+   - [Iter 214] Total Score: 5850220 (+4)
+   - [Discrete] Scanning pairs... Done took 3.2987 s
+   - [Discrete] SWAP: 8564 <-> 14220 Gain: 4.0000
+   - [Iter 215] Total Score: 5850224 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3115 s
+   - [Discrete] SWAP: 6823 <-> 12132 Gain: 4.0000
+   - [Iter 216] Total Score: 5850228 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3071 s
+   - [Discrete] SWAP: 11406 <-> 16867 Gain: 4.0000
+   - [Iter 217] Total Score: 5850232 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3093 s
+   - [Discrete] SWAP: 8174 <-> 14117 Gain: 4.0000
+   - [Iter 218] Total Score: 5850236 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3018 s
+   - [Discrete] SWAP: 13283 <-> 16083 Gain: 4.0000
+   - [Iter 219] Total Score: 5850240 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3047 s
+   - [Discrete] SWAP: 15658 <-> 18024 Gain: 4.0000
+   - [Iter 220] Total Score: 5850244 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3052 s
+   - [Discrete] SWAP: 5786 <-> 16142 Gain: 4.0000
+   - [Iter 221] Total Score: 5850248 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3048 s
+   - [Discrete] SWAP: 15514 <-> 18307 Gain: 4.0000
+   - [Iter 222] Total Score: 5850252 (+4)
+   - [Discrete] Scanning pairs... Done took 3.2967 s
+   - [Discrete] SWAP: 24 <-> 8168 Gain: 4.0000
+   - [Iter 223] Total Score: 5850256 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3054 s
+   - [Discrete] SWAP: 14337 <-> 16852 Gain: 4.0000
+   - [Iter 224] Total Score: 5850260 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3025 s
+   - [Discrete] SWAP: 916 <-> 9166 Gain: 4.0000
+   - [Iter 225] Total Score: 5850264 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3091 s
+   - [Discrete] SWAP: 12487 <-> 18220 Gain: 4.0000
+   - [Iter 226] Total Score: 5850268 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3095 s
+   - [Discrete] SWAP: 7165 <-> 17167 Gain: 4.0000
+   - [Iter 227] Total Score: 5850272 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3098 s
+   - [Discrete] SWAP: 11374 <-> 14716 Gain: 4.0000
+   - [Iter 228] Total Score: 5850276 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3081 s
+   - [Discrete] SWAP: 6517 <-> 6755 Gain: 4.0000
+   - [Iter 229] Total Score: 5850280 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3006 s
+   - [Discrete] SWAP: 8441 <-> 8580 Gain: 4.0000
+   - [Iter 230] Total Score: 5850284 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3100 s
+   - [Discrete] SWAP: 7847 <-> 13879 Gain: 4.0000
+   - [Iter 231] Total Score: 5850288 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3046 s
+   - [Discrete] SWAP: 15681 <-> 18003 Gain: 4.0000
+   - [Iter 232] Total Score: 5850292 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3030 s
+   - [Discrete] SWAP: 11937 <-> 15798 Gain: 4.0000
+   - [Iter 233] Total Score: 5850296 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3044 s
+   - [Discrete] SWAP: 7133 <-> 18003 Gain: 4.0000
+   - [Iter 234] Total Score: 5850300 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3379 s
+   - [Discrete] SWAP: 7133 <-> 12520 Gain: 14.0000
+   - [Iter 235] Total Score: 5850314 (+14)
+   - [Discrete] Scanning pairs... Done took 3.3399 s
+   - [Discrete] SWAP: 844 <-> 8773 Gain: 3.0000
+   - [Iter 236] Total Score: 5850317 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3432 s
+   - [Discrete] SWAP: 100 <-> 14466 Gain: 3.0000
+   - [Iter 237] Total Score: 5850320 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3417 s
+   - [Discrete] SWAP: 14466 <-> 17582 Gain: 6.0000
+   - [Iter 238] Total Score: 5850326 (+6)
+   - [Discrete] Scanning pairs... Done took 3.3403 s
+   - [Discrete] SWAP: 1414 <-> 14605 Gain: 3.0000
+   - [Iter 239] Total Score: 5850329 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3457 s
+   - [Discrete] SWAP: 3378 <-> 17819 Gain: 3.0000
+   - [Iter 240] Total Score: 5850332 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3424 s
+   - [Discrete] SWAP: 5015 <-> 10169 Gain: 3.0000
+   - [Iter 241] Total Score: 5850335 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3444 s
+   - [Discrete] SWAP: 27 <-> 28 Gain: 3.0000
+   - [Iter 242] Total Score: 5850338 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3443 s
+   - [Discrete] SWAP: 1480 <-> 10263 Gain: 3.0000
+   - [Iter 243] Total Score: 5850341 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3370 s
+   - [Discrete] SWAP: 1490 <-> 1647 Gain: 3.0000
+   - [Iter 244] Total Score: 5850344 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3401 s
+   - [Discrete] SWAP: 2942 <-> 11317 Gain: 3.0000
+   - [Iter 245] Total Score: 5850347 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3426 s
+   - [Discrete] SWAP: 4270 <-> 18039 Gain: 3.0000
+   - [Iter 246] Total Score: 5850350 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3423 s
+   - [Discrete] SWAP: 4929 <-> 17510 Gain: 3.0000
+   - [Iter 247] Total Score: 5850353 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3439 s
+   - [Discrete] SWAP: 13721 <-> 13756 Gain: 3.0000
+   - [Iter 248] Total Score: 5850356 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3456 s
+   - [Discrete] SWAP: 3317 <-> 11801 Gain: 3.0000
+   - [Iter 249] Total Score: 5850359 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3486 s
+   - [Discrete] SWAP: 13879 <-> 14337 Gain: 3.0000
+   - [Iter 250] Total Score: 5850362 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3468 s
+   - [Discrete] SWAP: 8139 <-> 18282 Gain: 3.0000
+   - [Iter 251] Total Score: 5850365 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3417 s
+   - [Discrete] SWAP: 5832 <-> 6198 Gain: 3.0000
+   - [Iter 252] Total Score: 5850368 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3433 s
+   - [Discrete] SWAP: 169 <-> 334 Gain: 3.0000
+   - [Iter 253] Total Score: 5850371 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3409 s
+   - [Discrete] SWAP: 158 <-> 8141 Gain: 3.0000
+   - [Iter 254] Total Score: 5850374 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3368 s
+   - [Discrete] SWAP: 8172 <-> 8495 Gain: 3.0000
+   - [Iter 255] Total Score: 5850377 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3447 s
+   - [Discrete] SWAP: 5620 <-> 11791 Gain: 3.0000
+   - [Iter 256] Total Score: 5850380 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3475 s
+   - [Discrete] SWAP: 1036 <-> 8776 Gain: 3.0000
+   - [Iter 257] Total Score: 5850383 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3437 s
+   - [Discrete] SWAP: 3788 <-> 12255 Gain: 3.0000
+   - [Iter 258] Total Score: 5850386 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3410 s
+   - [Discrete] SWAP: 11495 <-> 15173 Gain: 7.0000
+   - [Iter 259] Total Score: 5850393 (+7)
+   - [Discrete] Scanning pairs... Done took 3.3433 s
+   - [Discrete] SWAP: 9936 <-> 16273 Gain: 3.0000
+   - [Iter 260] Total Score: 5850396 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3438 s
+   - [Discrete] SWAP: 3280 <-> 13498 Gain: 3.0000
+   - [Iter 261] Total Score: 5850399 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3469 s
+   - [Discrete] SWAP: 6846 <-> 13143 Gain: 3.0000
+   - [Iter 262] Total Score: 5850402 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3893 s
+   - [Discrete] SWAP: 12855 <-> 12897 Gain: 3.0000
+   - [Iter 263] Total Score: 5850405 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3670 s
+   - [Discrete] SWAP: 8715 <-> 17909 Gain: 3.0000
+   - [Iter 264] Total Score: 5850408 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3433 s
+   - [Discrete] SWAP: 14282 <-> 16733 Gain: 3.0000
+   - [Iter 265] Total Score: 5850411 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3448 s
+   - [Discrete] SWAP: 8935 <-> 9213 Gain: 3.0000
+   - [Iter 266] Total Score: 5850414 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3392 s
+   - [Discrete] SWAP: 11079 <-> 11368 Gain: 3.0000
+   - [Iter 267] Total Score: 5850417 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3369 s
+   - [Discrete] SWAP: 3038 <-> 9943 Gain: 3.0000
+   - [Iter 268] Total Score: 5850420 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3416 s
+   - [Discrete] SWAP: 11100 <-> 13024 Gain: 3.0000
+   - [Iter 269] Total Score: 5850423 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3418 s
+   - [Discrete] SWAP: 1910 <-> 14649 Gain: 3.0000
+   - [Iter 270] Total Score: 5850426 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3426 s
+   - [Discrete] SWAP: 349 <-> 16706 Gain: 3.0000
+   - [Iter 271] Total Score: 5850429 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3451 s
+   - [Discrete] SWAP: 8354 <-> 16516 Gain: 3.0000
+   - [Iter 272] Total Score: 5850432 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3407 s
+   - [Discrete] SWAP: 4756 <-> 13607 Gain: 3.0000
+   - [Iter 273] Total Score: 5850435 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3420 s
+   - [Discrete] SWAP: 851 <-> 16583 Gain: 3.0000
+   - [Iter 274] Total Score: 5850438 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3450 s
+   - [Discrete] SWAP: 13901 <-> 16545 Gain: 3.0000
+   - [Iter 275] Total Score: 5850441 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3452 s
+   - [Discrete] SWAP: 13211 <-> 13505 Gain: 3.0000
+   - [Iter 276] Total Score: 5850444 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3440 s
+   - [Discrete] SWAP: 11340 <-> 15645 Gain: 3.0000
+   - [Iter 277] Total Score: 5850447 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3438 s
+   - [Discrete] SWAP: 6150 <-> 13010 Gain: 2.0000
+   - [Iter 278] Total Score: 5850449 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3387 s
+   - [Discrete] SWAP: 1291 <-> 14607 Gain: 2.0000
+   - [Iter 279] Total Score: 5850451 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3407 s
+   - [Discrete] SWAP: 3537 <-> 10433 Gain: 2.0000
+   - [Iter 280] Total Score: 5850453 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3483 s
+   - [Discrete] SWAP: 317 <-> 14071 Gain: 2.0000
+   - [Iter 281] Total Score: 5850455 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3412 s
+   - [Discrete] SWAP: 8539 <-> 14280 Gain: 2.0000
+   - [Iter 282] Total Score: 5850457 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3408 s
+   - [Discrete] SWAP: 3186 <-> 10229 Gain: 2.0000
+   - [Iter 283] Total Score: 5850459 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3426 s
+   - [Discrete] SWAP: 561 <-> 17006 Gain: 2.0000
+   - [Iter 284] Total Score: 5850461 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3393 s
+   - [Discrete] SWAP: 2425 <-> 18457 Gain: 2.0000
+   - [Iter 285] Total Score: 5850463 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3446 s
+   - [Discrete] SWAP: 6526 <-> 7383 Gain: 2.0000
+   - [Iter 286] Total Score: 5850465 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3443 s
+   - [Discrete] SWAP: 327 <-> 14143 Gain: 2.0000
+   - [Iter 287] Total Score: 5850467 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3379 s
+   - [Discrete] SWAP: 1648 <-> 2743 Gain: 2.0000
+   - [Iter 288] Total Score: 5850469 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3449 s
+   - [Discrete] SWAP: 5671 <-> 12112 Gain: 2.0000
+   - [Iter 289] Total Score: 5850471 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3427 s
+   - [Discrete] SWAP: 7756 <-> 11562 Gain: 2.0000
+   - [Iter 290] Total Score: 5850473 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3389 s
+   - [Discrete] SWAP: 703 <-> 11562 Gain: 9.0000
+   - [Iter 291] Total Score: 5850482 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3415 s
+   - [Discrete] SWAP: 14765 <-> 18478 Gain: 3.0000
+   - [Iter 292] Total Score: 5850485 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3417 s
+   - [Discrete] SWAP: 14765 <-> 16939 Gain: 9.0000
+   - [Iter 293] Total Score: 5850494 (+9)
+   - [Discrete] Scanning pairs... Done took 3.3444 s
+   - [Discrete] SWAP: 16939 <-> 18303 Gain: 4.0000
+   - [Iter 294] Total Score: 5850498 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3442 s
+   - [Discrete] SWAP: 675 <-> 8346 Gain: 2.0000
+   - [Iter 295] Total Score: 5850500 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3443 s
+   - [Discrete] SWAP: 6131 <-> 12779 Gain: 2.0000
+   - [Iter 296] Total Score: 5850502 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3435 s
+   - [Discrete] SWAP: 15464 <-> 17304 Gain: 3.0000
+   - [Iter 297] Total Score: 5850505 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3439 s
+   - [Discrete] SWAP: 11865 <-> 15586 Gain: 3.0000
+   - [Iter 298] Total Score: 5850508 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3456 s
+   - [Discrete] SWAP: 13353 <-> 14857 Gain: 3.0000
+   - [Iter 299] Total Score: 5850511 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3391 s
+   - [Discrete] SWAP: 13724 <-> 14857 Gain: 5.0000
+   - [Iter 300] Total Score: 5850516 (+5)
+   - [Discrete] Scanning pairs... Done took 3.3387 s
+   - [Discrete] SWAP: 5772 <-> 6921 Gain: 2.0000
+   - [Iter 301] Total Score: 5850518 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3501 s
+   - [Discrete] SWAP: 1795 <-> 13114 Gain: 2.0000
+   - [Iter 302] Total Score: 5850520 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3387 s
+   - [Discrete] SWAP: 10845 <-> 14715 Gain: 2.0000
+   - [Iter 303] Total Score: 5850522 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3369 s
+   - [Discrete] SWAP: 219 <-> 8301 Gain: 2.0000
+   - [Iter 304] Total Score: 5850524 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3382 s
+   - [Discrete] SWAP: 8643 <-> 10595 Gain: 2.0000
+   - [Iter 305] Total Score: 5850526 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3459 s
+   - [Discrete] SWAP: 8643 <-> 18134 Gain: 13.0000
+   - [Iter 306] Total Score: 5850539 (+13)
+   - [Discrete] Scanning pairs... Done took 3.3456 s
+   - [Discrete] SWAP: 1139 <-> 17473 Gain: 2.0000
+   - [Iter 307] Total Score: 5850541 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3448 s
+   - [Discrete] SWAP: 7685 <-> 7752 Gain: 2.0000
+   - [Iter 308] Total Score: 5850543 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3121 s
+   - [Discrete] SWAP: 10845 <-> 14813 Gain: 2.0000
+   - [Iter 309] Total Score: 5850545 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3048 s
+   - [Discrete] SWAP: 4298 <-> 15616 Gain: 2.0000
+   - [Iter 310] Total Score: 5850547 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3075 s
+   - [Discrete] SWAP: 1106 <-> 18391 Gain: 2.0000
+   - [Iter 311] Total Score: 5850549 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3089 s
+   - [Discrete] SWAP: 17516 <-> 18198 Gain: 2.0000
+   - [Iter 312] Total Score: 5850551 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3128 s
+   - [Discrete] SWAP: 15616 <-> 17058 Gain: 2.0000
+   - [Iter 313] Total Score: 5850553 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3040 s
+   - [Discrete] SWAP: 8068 <-> 14002 Gain: 2.0000
+   - [Iter 314] Total Score: 5850555 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3149 s
+   - [Discrete] SWAP: 2381 <-> 2387 Gain: 2.0000
+   - [Iter 315] Total Score: 5850557 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3109 s
+   - [Discrete] SWAP: 8667 <-> 13998 Gain: 2.0000
+   - [Iter 316] Total Score: 5850559 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3040 s
+   - [Discrete] SWAP: 17437 <-> 17736 Gain: 2.0000
+   - [Iter 317] Total Score: 5850561 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3120 s
+   - [Discrete] SWAP: 6442 <-> 12698 Gain: 2.0000
+   - [Iter 318] Total Score: 5850563 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3078 s
+   - [Discrete] SWAP: 102 <-> 14059 Gain: 3.0000
+   - [Iter 319] Total Score: 5850566 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3055 s
+   - [Discrete] SWAP: 268 <-> 14059 Gain: 4.0000
+   - [Iter 320] Total Score: 5850570 (+4)
+   - [Discrete] Scanning pairs... Done took 3.3041 s
+   - [Discrete] SWAP: 2457 <-> 2516 Gain: 2.0000
+   - [Iter 321] Total Score: 5850572 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3106 s
+   - [Discrete] SWAP: 8107 <-> 17624 Gain: 2.0000
+   - [Iter 322] Total Score: 5850574 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3095 s
+   - [Discrete] SWAP: 83 <-> 8154 Gain: 2.0000
+   - [Iter 323] Total Score: 5850576 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3048 s
+   - [Discrete] SWAP: 8357 <-> 14245 Gain: 2.0000
+   - [Iter 324] Total Score: 5850578 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3038 s
+   - [Discrete] SWAP: 8860 <-> 14216 Gain: 2.0000
+   - [Iter 325] Total Score: 5850580 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3004 s
+   - [Discrete] SWAP: 213 <-> 421 Gain: 2.0000
+   - [Iter 326] Total Score: 5850582 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3057 s
+   - [Discrete] SWAP: 10493 <-> 16368 Gain: 2.0000
+   - [Iter 327] Total Score: 5850584 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 10179 <-> 15220 Gain: 2.0000
+   - [Iter 328] Total Score: 5850586 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3066 s
+   - [Discrete] SWAP: 13592 <-> 13594 Gain: 2.0000
+   - [Iter 329] Total Score: 5850588 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3098 s
+   - [Discrete] SWAP: 14337 <-> 17751 Gain: 2.0000
+   - [Iter 330] Total Score: 5850590 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3033 s
+   - [Discrete] SWAP: 839 <-> 17234 Gain: 2.0000
+   - [Iter 331] Total Score: 5850592 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3053 s
+   - [Discrete] SWAP: 9227 <-> 18181 Gain: 2.0000
+   - [Iter 332] Total Score: 5850594 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3071 s
+   - [Discrete] SWAP: 12219 <-> 13342 Gain: 2.0000
+   - [Iter 333] Total Score: 5850596 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3057 s
+   - [Discrete] SWAP: 10429 <-> 10729 Gain: 2.0000
+   - [Iter 334] Total Score: 5850598 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3077 s
+   - [Discrete] SWAP: 14115 <-> 18510 Gain: 2.0000
+   - [Iter 335] Total Score: 5850600 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3018 s
+   - [Discrete] SWAP: 1323 <-> 9262 Gain: 2.0000
+   - [Iter 336] Total Score: 5850602 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3076 s
+   - [Discrete] SWAP: 16087 <-> 16247 Gain: 2.0000
+   - [Iter 337] Total Score: 5850604 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3034 s
+   - [Discrete] SWAP: 14729 <-> 16838 Gain: 2.0000
+   - [Iter 338] Total Score: 5850606 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3093 s
+   - [Discrete] SWAP: 12157 <-> 15348 Gain: 2.0000
+   - [Iter 339] Total Score: 5850608 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3113 s
+   - [Discrete] SWAP: 11873 <-> 12685 Gain: 2.0000
+   - [Iter 340] Total Score: 5850610 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3083 s
+   - [Discrete] SWAP: 15045 <-> 17011 Gain: 2.0000
+   - [Iter 341] Total Score: 5850612 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3075 s
+   - [Discrete] SWAP: 8125 <-> 8179 Gain: 2.0000
+   - [Iter 342] Total Score: 5850614 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3064 s
+   - [Discrete] SWAP: 15075 <-> 16898 Gain: 2.0000
+   - [Iter 343] Total Score: 5850616 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3089 s
+   - [Discrete] SWAP: 534 <-> 13954 Gain: 1.0000
+   - [Iter 344] Total Score: 5850617 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3106 s
+   - [Discrete] SWAP: 288 <-> 8454 Gain: 1.0000
+   - [Iter 345] Total Score: 5850618 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3063 s
+   - [Discrete] SWAP: 423 <-> 8600 Gain: 1.0000
+   - [Iter 346] Total Score: 5850619 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3003 s
+   - [Discrete] SWAP: 102 <-> 8225 Gain: 1.0000
+   - [Iter 347] Total Score: 5850620 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3084 s
+   - [Discrete] SWAP: 635 <-> 8657 Gain: 1.0000
+   - [Iter 348] Total Score: 5850621 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 752 <-> 884 Gain: 1.0000
+   - [Iter 349] Total Score: 5850622 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3132 s
+   - [Discrete] SWAP: 1081 <-> 9272 Gain: 1.0000
+   - [Iter 350] Total Score: 5850623 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3100 s
+   - [Discrete] SWAP: 1146 <-> 15761 Gain: 1.0000
+   - [Iter 351] Total Score: 5850624 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3061 s
+   - [Discrete] SWAP: 693 <-> 15619 Gain: 1.0000
+   - [Iter 352] Total Score: 5850625 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3115 s
+   - [Discrete] SWAP: 411 <-> 8382 Gain: 1.0000
+   - [Iter 353] Total Score: 5850626 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3093 s
+   - [Discrete] SWAP: 1323 <-> 14898 Gain: 1.0000
+   - [Iter 354] Total Score: 5850627 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3124 s
+   - [Discrete] SWAP: 4235 <-> 6049 Gain: 1.0000
+   - [Iter 355] Total Score: 5850628 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3065 s
+   - [Discrete] SWAP: 828 <-> 13764 Gain: 1.0000
+   - [Iter 356] Total Score: 5850629 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3046 s
+   - [Discrete] SWAP: 828 <-> 961 Gain: 2.0000
+   - [Iter 357] Total Score: 5850631 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3082 s
+   - [Discrete] SWAP: 6 <-> 8076 Gain: 1.0000
+   - [Iter 358] Total Score: 5850632 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3079 s
+   - [Discrete] SWAP: 1160 <-> 9370 Gain: 1.0000
+   - [Iter 359] Total Score: 5850633 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3084 s
+   - [Discrete] SWAP: 698 <-> 16384 Gain: 1.0000
+   - [Iter 360] Total Score: 5850634 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3142 s
+   - [Discrete] SWAP: 1243 <-> 9115 Gain: 1.0000
+   - [Iter 361] Total Score: 5850635 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3066 s
+   - [Discrete] SWAP: 1571 <-> 10023 Gain: 1.0000
+   - [Iter 362] Total Score: 5850636 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3075 s
+   - [Discrete] SWAP: 1035 <-> 8796 Gain: 1.0000
+   - [Iter 363] Total Score: 5850637 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3108 s
+   - [Discrete] SWAP: 1219 <-> 15176 Gain: 1.0000
+   - [Iter 364] Total Score: 5850638 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3058 s
+   - [Discrete] SWAP: 3679 <-> 14881 Gain: 1.0000
+   - [Iter 365] Total Score: 5850639 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3047 s
+   - [Discrete] SWAP: 1341 <-> 9601 Gain: 1.0000
+   - [Iter 366] Total Score: 5850640 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3104 s
+   - [Discrete] SWAP: 405 <-> 8918 Gain: 1.0000
+   - [Iter 367] Total Score: 5850641 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3099 s
+   - [Discrete] SWAP: 5186 <-> 15757 Gain: 1.0000
+   - [Iter 368] Total Score: 5850642 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3049 s
+   - [Discrete] SWAP: 16848 <-> 17897 Gain: 2.0000
+   - [Iter 369] Total Score: 5850644 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3043 s
+   - [Discrete] SWAP: 21 <-> 380 Gain: 1.0000
+   - [Iter 370] Total Score: 5850645 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3095 s
+   - [Discrete] SWAP: 1252 <-> 16930 Gain: 1.0000
+   - [Iter 371] Total Score: 5850646 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3045 s
+   - [Discrete] SWAP: 1495 <-> 9089 Gain: 1.0000
+   - [Iter 372] Total Score: 5850647 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3073 s
+   - [Discrete] SWAP: 1278 <-> 17443 Gain: 1.0000
+   - [Iter 373] Total Score: 5850648 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3063 s
+   - [Discrete] SWAP: 9022 <-> 15549 Gain: 1.0000
+   - [Iter 374] Total Score: 5850649 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3056 s
+   - [Discrete] SWAP: 2413 <-> 11054 Gain: 1.0000
+   - [Iter 375] Total Score: 5850650 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3074 s
+   - [Discrete] SWAP: 1566 <-> 5598 Gain: 1.0000
+   - [Iter 376] Total Score: 5850651 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3079 s
+   - [Discrete] SWAP: 1220 <-> 9101 Gain: 1.0000
+   - [Iter 377] Total Score: 5850652 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3053 s
+   - [Discrete] SWAP: 7555 <-> 13802 Gain: 1.0000
+   - [Iter 378] Total Score: 5850653 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3119 s
+   - [Discrete] SWAP: 6123 <-> 16726 Gain: 1.0000
+   - [Iter 379] Total Score: 5850654 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3101 s
+   - [Discrete] SWAP: 828 <-> 8009 Gain: 1.0000
+   - [Iter 380] Total Score: 5850655 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3080 s
+   - [Discrete] SWAP: 1180 <-> 16211 Gain: 1.0000
+   - [Iter 381] Total Score: 5850656 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3993 s
+   - [Discrete] SWAP: 1208 <-> 15903 Gain: 1.0000
+   - [Iter 382] Total Score: 5850657 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3090 s
+   - [Discrete] SWAP: 6698 <-> 17362 Gain: 1.0000
+   - [Iter 383] Total Score: 5850658 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3097 s
+   - [Discrete] SWAP: 8156 <-> 16756 Gain: 1.0000
+   - [Iter 384] Total Score: 5850659 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3203 s
+   - [Discrete] SWAP: 12203 <-> 15489 Gain: 1.0000
+   - [Iter 385] Total Score: 5850660 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3186 s
+   - [Discrete] SWAP: 7486 <-> 13513 Gain: 1.0000
+   - [Iter 386] Total Score: 5850661 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3212 s
+   - [Discrete] SWAP: 4827 <-> 12219 Gain: 1.0000
+   - [Iter 387] Total Score: 5850662 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3073 s
+   - [Discrete] SWAP: 4827 <-> 12953 Gain: 12.0000
+   - [Iter 388] Total Score: 5850674 (+12)
+   - [Discrete] Scanning pairs... Done took 3.3133 s
+   - [Discrete] SWAP: 16024 <-> 17252 Gain: 3.0000
+   - [Iter 389] Total Score: 5850677 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3087 s
+   - [Discrete] SWAP: 3324 <-> 11817 Gain: 1.0000
+   - [Iter 390] Total Score: 5850678 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3136 s
+   - [Discrete] SWAP: 3146 <-> 10882 Gain: 1.0000
+   - [Iter 391] Total Score: 5850679 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3139 s
+   - [Discrete] SWAP: 8209 <-> 16536 Gain: 1.0000
+   - [Iter 392] Total Score: 5850680 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3146 s
+   - [Discrete] SWAP: 9256 <-> 16536 Gain: 2.0000
+   - [Iter 393] Total Score: 5850682 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3540 s
+   - [Discrete] SWAP: 5297 <-> 11660 Gain: 1.0000
+   - [Iter 394] Total Score: 5850683 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2711 s
+   - [Discrete] SWAP: 7282 <-> 16050 Gain: 1.0000
+   - [Iter 395] Total Score: 5850684 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2883 s
+   - [Discrete] SWAP: 1181 <-> 9582 Gain: 1.0000
+   - [Iter 396] Total Score: 5850685 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2900 s
+   - [Discrete] SWAP: 6086 <-> 16183 Gain: 1.0000
+   - [Iter 397] Total Score: 5850686 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2935 s
+   - [Discrete] SWAP: 3141 <-> 13767 Gain: 1.0000
+   - [Iter 398] Total Score: 5850687 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2833 s
+   - [Discrete] SWAP: 216 <-> 8414 Gain: 1.0000
+   - [Iter 399] Total Score: 5850688 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2862 s
+   - [Discrete] SWAP: 8086 <-> 8106 Gain: 1.0000
+   - [Iter 400] Total Score: 5850689 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2864 s
+   - [Discrete] SWAP: 2248 <-> 12982 Gain: 1.0000
+   - [Iter 401] Total Score: 5850690 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2843 s
+   - [Discrete] SWAP: 1329 <-> 9214 Gain: 1.0000
+   - [Iter 402] Total Score: 5850691 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2828 s
+   - [Discrete] SWAP: 1334 <-> 11839 Gain: 1.0000
+   - [Iter 403] Total Score: 5850692 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2785 s
+   - [Discrete] SWAP: 961 <-> 13968 Gain: 1.0000
+   - [Iter 404] Total Score: 5850693 (+1)
+   - [Discrete] Scanning pairs... Done took 3.4778 s
+   - [Discrete] SWAP: 19 <-> 13995 Gain: 1.0000
+   - [Iter 405] Total Score: 5850694 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2838 s
+   - [Discrete] SWAP: 1909 <-> 9401 Gain: 1.0000
+   - [Iter 406] Total Score: 5850695 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2917 s
+   - [Discrete] SWAP: 8167 <-> 17170 Gain: 1.0000
+   - [Iter 407] Total Score: 5850696 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2812 s
+   - [Discrete] SWAP: 8246 <-> 13998 Gain: 1.0000
+   - [Iter 408] Total Score: 5850697 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2796 s
+   - [Discrete] SWAP: 8818 <-> 14085 Gain: 2.0000
+   - [Iter 409] Total Score: 5850699 (+2)
+   - [Discrete] Scanning pairs... Done took 3.2806 s
+   - [Discrete] SWAP: 168 <-> 14085 Gain: 2.0000
+   - [Iter 410] Total Score: 5850701 (+2)
+   - [Discrete] Scanning pairs... Done took 3.3318 s
+   - [Discrete] SWAP: 168 <-> 14039 Gain: 3.0000
+   - [Iter 411] Total Score: 5850704 (+3)
+   - [Discrete] Scanning pairs... Done took 3.3136 s
+   - [Discrete] SWAP: 6660 <-> 13023 Gain: 1.0000
+   - [Iter 412] Total Score: 5850705 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2894 s
+   - [Discrete] SWAP: 3464 <-> 10808 Gain: 1.0000
+   - [Iter 413] Total Score: 5850706 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2929 s
+   - [Discrete] SWAP: 16670 <-> 16707 Gain: 1.0000
+   - [Iter 414] Total Score: 5850707 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2926 s
+   - [Discrete] SWAP: 9155 <-> 14421 Gain: 1.0000
+   - [Iter 415] Total Score: 5850708 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2958 s
+   - [Discrete] SWAP: 5846 <-> 11942 Gain: 1.0000
+   - [Iter 416] Total Score: 5850709 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2939 s
+   - [Discrete] SWAP: 6440 <-> 13011 Gain: 1.0000
+   - [Iter 417] Total Score: 5850710 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2931 s
+   - [Discrete] SWAP: 4851 <-> 12687 Gain: 1.0000
+   - [Iter 418] Total Score: 5850711 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2977 s
+   - [Discrete] SWAP: 8644 <-> 14245 Gain: 1.0000
+   - [Iter 419] Total Score: 5850712 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2999 s
+   - [Discrete] SWAP: 8237 <-> 8280 Gain: 1.0000
+   - [Iter 420] Total Score: 5850713 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3001 s
+   - [Discrete] SWAP: 4300 <-> 17871 Gain: 1.0000
+   - [Iter 421] Total Score: 5850714 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2940 s
+   - [Discrete] SWAP: 14807 <-> 14995 Gain: 2.0000
+   - [Iter 422] Total Score: 5850716 (+2)
+   - [Discrete] Scanning pairs... Done took 3.2996 s
+   - [Discrete] SWAP: 13156 <-> 18219 Gain: 1.0000
+   - [Iter 423] Total Score: 5850717 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2938 s
+   - [Discrete] SWAP: 14014 <-> 17838 Gain: 1.0000
+   - [Iter 424] Total Score: 5850718 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3006 s
+   - [Discrete] SWAP: 6781 <-> 15867 Gain: 1.0000
+   - [Iter 425] Total Score: 5850719 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3028 s
+   - [Discrete] SWAP: 7559 <-> 7846 Gain: 1.0000
+   - [Iter 426] Total Score: 5850720 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2999 s
+   - [Discrete] SWAP: 16065 <-> 16706 Gain: 1.0000
+   - [Iter 427] Total Score: 5850721 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2914 s
+   - [Discrete] SWAP: 7144 <-> 12164 Gain: 1.0000
+   - [Iter 428] Total Score: 5850722 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2934 s
+   - [Discrete] SWAP: 8092 <-> 15504 Gain: 1.0000
+   - [Iter 429] Total Score: 5850723 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2977 s
+   - [Discrete] SWAP: 8269 <-> 17076 Gain: 1.0000
+   - [Iter 430] Total Score: 5850724 (+1)
+   - [Discrete] Scanning pairs... Done took 3.3284 s
+   - [Discrete] SWAP: 8918 <-> 14369 Gain: 1.0000
+   - [Iter 431] Total Score: 5850725 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2602 s
+   - [Discrete] SWAP: 13786 <-> 16399 Gain: 1.0000
+   - [Iter 432] Total Score: 5850726 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2587 s
+   - [Discrete] SWAP: 7754 <-> 12954 Gain: 1.0000
+   - [Iter 433] Total Score: 5850727 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2512 s
+   - [Discrete] SWAP: 8329 <-> 11006 Gain: 1.0000
+   - [Iter 434] Total Score: 5850728 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2604 s
+   - [Discrete] SWAP: 1510 <-> 10975 Gain: 2.0000
+   - [Iter 435] Total Score: 5850730 (+2)
+   - [Discrete] Scanning pairs... Done took 3.2575 s
+   - [Discrete] SWAP: 11865 <-> 15586 Gain: 1.0000
+   - [Iter 436] Total Score: 5850731 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2564 s
+   - [Discrete] SWAP: 11755 <-> 16595 Gain: 1.0000
+   - [Iter 437] Total Score: 5850732 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2581 s
+   - [Discrete] SWAP: 16333 <-> 17555 Gain: 1.0000
+   - [Iter 438] Total Score: 5850733 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2549 s
+   - [Discrete] SWAP: 8635 <-> 17649 Gain: 1.0000
+   - [Iter 439] Total Score: 5850734 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2765 s
+   - [Discrete] SWAP: 12309 <-> 18334 Gain: 1.0000
+   - [Iter 440] Total Score: 5850735 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2753 s
+   - [Discrete] SWAP: 8230 <-> 17863 Gain: 1.0000
+   - [Iter 441] Total Score: 5850736 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2741 s
+   - [Discrete] SWAP: 9983 <-> 10213 Gain: 1.0000
+   - [Iter 442] Total Score: 5850737 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2778 s
+   - [Discrete] SWAP: 2806 <-> 10213 Gain: 3.0000
+   - [Iter 443] Total Score: 5850740 (+3)
+   - [Discrete] Scanning pairs... Done took 3.2800 s
+   - [Discrete] SWAP: 8263 <-> 8421 Gain: 1.0000
+   - [Iter 444] Total Score: 5850741 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2763 s
+   - [Discrete] SWAP: 14089 <-> 16648 Gain: 1.0000
+   - [Iter 445] Total Score: 5850742 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2780 s
+   - [Discrete] SWAP: 15202 <-> 17369 Gain: 1.0000
+   - [Iter 446] Total Score: 5850743 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2776 s
+   - [Discrete] SWAP: 12219 <-> 13570 Gain: 1.0000
+   - [Iter 447] Total Score: 5850744 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2855 s
+   - [Discrete] SWAP: 8273 <-> 14052 Gain: 1.0000
+   - [Iter 448] Total Score: 5850745 (+1)
+   - [Discrete] Scanning pairs... Done took 3.4937 s
+   - [Discrete] SWAP: 13879 <-> 14605 Gain: 1.0000
+   - [Iter 449] Total Score: 5850746 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2762 s
+   - [Discrete] SWAP: 17616 <-> 18150 Gain: 1.0000
+   - [Iter 450] Total Score: 5850747 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2764 s
+   - [Discrete] SWAP: 8538 <-> 17474 Gain: 1.0000
+   - [Iter 451] Total Score: 5850748 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2724 s
+   - [Discrete] SWAP: 15302 <-> 18252 Gain: 1.0000
+   - [Iter 452] Total Score: 5850749 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2769 s
+   - [Discrete] SWAP: 14269 <-> 16648 Gain: 1.0000
+   - [Iter 453] Total Score: 5850750 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2764 s
+   - [Discrete] SWAP: 13683 <-> 13697 Gain: 1.0000
+   - [Iter 454] Total Score: 5850751 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2830 s
+   - [Discrete] SWAP: 16693 <-> 16930 Gain: 1.0000
+   - [Iter 455] Total Score: 5850752 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2691 s
+   - [Discrete] SWAP: 16714 <-> 17807 Gain: 1.0000
+   - [Iter 456] Total Score: 5850753 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2595 s
+   - [Discrete] SWAP: 8355 <-> 8485 Gain: 1.0000
+   - [Iter 457] Total Score: 5850754 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2597 s
+   - [Discrete] SWAP: 16830 <-> 17942 Gain: 1.0000
+   - [Iter 458] Total Score: 5850755 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2594 s
+   - [Discrete] SWAP: 16830 <-> 18517 Gain: 8.0000
+   - [Iter 459] Total Score: 5850763 (+8)
+   - [Discrete] Scanning pairs... Done took 3.2723 s
+   - [Discrete] SWAP: 12982 <-> 18358 Gain: 1.0000
+   - [Iter 460] Total Score: 5850764 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2676 s
+   - [Discrete] SWAP: 11816 <-> 17901 Gain: 1.0000
+   - [Iter 461] Total Score: 5850765 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2608 s
+   - [Discrete] SWAP: 2404 <-> 17901 Gain: 2.0000
+   - [Iter 462] Total Score: 5850767 (+2)
+   - [Discrete] Scanning pairs... Done took 3.2615 s
+   - [Discrete] SWAP: 2726 <-> 18311 Gain: 4.0000
+   - [Iter 463] Total Score: 5850771 (+4)
+   - [Discrete] Scanning pairs... Done took 3.2652 s
+   - [Discrete] SWAP: 11189 <-> 15045 Gain: 2.0000
+   - [Iter 464] Total Score: 5850773 (+2)
+   - [Discrete] Scanning pairs... Done took 3.2666 s
+   - [Discrete] SWAP: 3704 <-> 16016 Gain: 1.0000
+   - [Iter 465] Total Score: 5850774 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2663 s
+   - [Discrete] SWAP: 13093 <-> 18172 Gain: 6.0000
+   - [Iter 466] Total Score: 5850780 (+6)
+   - [Discrete] Scanning pairs... Done took 3.2565 s
+   - [Discrete] SWAP: 13093 <-> 17188 Gain: 6.0000
+   - [Iter 467] Total Score: 5850786 (+6)
+   - [Discrete] Scanning pairs... Done took 3.2610 s
+   - [Discrete] SWAP: 12388 <-> 17218 Gain: 1.0000
+   - [Iter 468] Total Score: 5850787 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2596 s
+   - [Discrete] SWAP: 14369 <-> 17369 Gain: 1.0000
+   - [Iter 469] Total Score: 5850788 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2622 s
+   - [Discrete] SWAP: 16625 <-> 17789 Gain: 1.0000
+   - [Iter 470] Total Score: 5850789 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2570 s
+   - [Discrete] SWAP: 1266 <-> 15991 Gain: 1.0000
+   - [Iter 471] Total Score: 5850790 (+1)
+   - [Discrete] Scanning pairs... Done took 3.2651 s
+   - [Discrete] No beneficial swaps found.
+   - Converged (No further beneficial swaps).
+Final Score: 5850790
+Total Execution took 3777.6046 s

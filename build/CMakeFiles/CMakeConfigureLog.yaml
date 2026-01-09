@@ -1,0 +1,1026 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 4.18.0-553.52.1.el8_10.x86_64 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/3.30.5/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /sw/isaac/compilers/gcc/13.4.0/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/3.30.5/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6383/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e6383.dir/build.make CMakeFiles/cmTC_e6383.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX'
+        Building C object CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc   -v -o CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -c /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs
+        COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.1.0 (conda-forge gcc 15.1.0-2) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/cc1 -quiet -v -iprefix /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/ -isysroot /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e6383.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -idirafter /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include -o /tmp/ccTWLfyI.s
+        GNU C23 (conda-forge gcc 15.1.0-2) version 15.1.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include"
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed"
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include
+        End of search list.
+        Compiler executable checksum: 92bf94f8dfdd0ebbfe562d19a913b665
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o /tmp/ccTWLfyI.s
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40
+        COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e6383
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6383.dir/link.txt --verbose=1
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc  -v -Wl,-v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -o cmTC_e6383
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs
+        COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc
+        COLLECT_LTO_WRAPPER=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.1.0 (conda-forge gcc 15.1.0-2) 
+        COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6383' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6383.'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2 -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1f3sN2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6383 /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib
+        collect2 version 15.1.0
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/ld -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1f3sN2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6383 /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib
+        GNU ld (Anaconda binutils) 2.40
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6383' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6383.'
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+          add: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include]
+          add: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed]
+          add: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+          add: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include]
+        end of search list found
+        collapse include dir [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3] ==> [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        collapse include dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include]
+        collapse include dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed]
+        collapse include dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/include]
+        collapse include dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include]
+        implicit include dirs: [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/include;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX']
+        ignore line: []
+        ignore line: [Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e6383/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e6383.dir/build.make CMakeFiles/cmTC_e6383.dir/build]
+        ignore line: [gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-y8MjQX']
+        ignore line: [Building C object CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc   -v -o CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -c /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCCompilerABI.c]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs]
+        ignore line: [COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.1.0 (conda-forge gcc 15.1.0-2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/']
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/cc1 -quiet -v -iprefix /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/ -isysroot /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e6383.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -idirafter /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include -o /tmp/ccTWLfyI.s]
+        ignore line: [GNU C23 (conda-forge gcc 15.1.0-2) version 15.1.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 92bf94f8dfdd0ebbfe562d19a913b665]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/']
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o /tmp/ccTWLfyI.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40]
+        ignore line: [COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e6383]
+        ignore line: [/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6383.dir/link.txt --verbose=1]
+        ignore line: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc  -v -Wl -v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -o cmTC_e6383]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs]
+        ignore line: [COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.1.0 (conda-forge gcc 15.1.0-2) ]
+        ignore line: [COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e6383' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e6383.']
+        link line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2 -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1f3sN2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6383 /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc1f3sN2.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e6383] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o] ==> obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o] ==> obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o]
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+          arg [-rpath] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> ignore
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        ignore line: [collect2 version 15.1.0]
+        ignore line: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/ld -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc1f3sN2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e6383 /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib -v CMakeFiles/cmTC_e6383.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        linker tool for 'C': /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/ld
+        collapse obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+        collapse obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+        collapse obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o]
+        collapse obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o]
+        collapse obj [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+        implicit dirs: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/ld" "-v"
+      GNU ld (Anaconda binutils) 2.40
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_45704/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_45704.dir/build.make CMakeFiles/cmTC_45704.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO'
+        Building CXX object CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++   -v -o CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -c /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/'
+         /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/cc1plus -quiet -v -D_GNU_SOURCE /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_45704.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccdbCKpY.s
+        GNU C++17 (GCC) version 13.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include
+         /usr/local/include
+         /sw/isaac/compilers/gcc/13.4.0/include
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 26fcdf3ab62485d3d37d781b2c5a1e7e
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/'
+         as -v --64 -o CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdbCKpY.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-125.el8_10
+        COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_45704
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45704.dir/link.txt --verbose=1
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++  -v -Wl,-v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_45704
+        Using built-in specs.
+        COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++
+        COLLECT_LTO_WRAPPER=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45704' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45704.'
+         /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2 -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZCRS4v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_45704 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. -v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o
+        collect2 version 13.4.0
+        /usr/bin/ld -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZCRS4v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_45704 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. -v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o
+        GNU ld version 2.30-125.el8_10
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45704' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45704.'
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+          add: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0]
+          add: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu]
+          add: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward]
+          add: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include]
+          add: [/usr/local/include]
+          add: [/sw/isaac/compilers/gcc/13.4.0/include]
+          add: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3] ==> [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0] ==> [/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu] ==> [/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0/x86_64-pc-linux-gnu]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward] ==> [/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0/backward]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include] ==> [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/include] ==> [/sw/isaac/compilers/gcc/13.4.0/include]
+        collapse include dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed] ==> [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3;/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0;/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0/x86_64-pc-linux-gnu;/sw/isaac/compilers/gcc/13.4.0/include/c++/13.4.0/backward;/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include;/usr/local/include;/sw/isaac/compilers/gcc/13.4.0/include;/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO']
+        ignore line: []
+        ignore line: [Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_45704/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_45704.dir/build.make CMakeFiles/cmTC_45704.dir/build]
+        ignore line: [gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-cDUOzO']
+        ignore line: [Building CXX object CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/sw/isaac/compilers/gcc/13.4.0/bin/c++   -v -o CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -c /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/']
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/cc1plus -quiet -v -D_GNU_SOURCE /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_45704.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccdbCKpY.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/include]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 26fcdf3ab62485d3d37d781b2c5a1e7e]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdbCKpY.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-125.el8_10]
+        ignore line: [COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_45704]
+        ignore line: [/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45704.dir/link.txt --verbose=1]
+        ignore line: [/sw/isaac/compilers/gcc/13.4.0/bin/c++  -v -Wl -v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_45704]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_45704' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_45704.']
+        link line: [ /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2 -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZCRS4v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_45704 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. -v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccZCRS4v.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_45704] ==> ignore
+          arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+          arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+          arg [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o] ==> obj [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o]
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0]
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o] ==> obj [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o]
+          arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+        ignore line: [collect2 version 13.4.0]
+        ignore line: [/usr/bin/ld -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccZCRS4v.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_45704 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. -v CMakeFiles/cmTC_45704.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+        collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+        collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0] ==> [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64] ==> [/sw/isaac/compilers/gcc/13.4.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..] ==> [/sw/isaac/compilers/gcc/13.4.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib64/crt1.o;/lib64/crti.o;/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o;/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o;/lib64/crtn.o]
+        implicit dirs: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0;/sw/isaac/compilers/gcc/13.4.0/lib64;/lib64;/usr/lib64;/sw/isaac/compilers/gcc/13.4.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld version 2.30-125.el8_10
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9189e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9189e.dir/build.make CMakeFiles/cmTC_9189e.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac'
+        Building C object CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac/OpenMPTryFlag.c
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs
+        COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.1.0 (conda-forge gcc 15.1.0-2) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/cc1 -quiet -v -iprefix /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/ -isysroot /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_9189e.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -idirafter /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include -o /tmp/ccuT7SWg.s
+        GNU C23 (conda-forge gcc 15.1.0-2) version 15.1.0 (x86_64-conda-linux-gnu)
+        	compiled by GNU C version 14.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"
+        ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include"
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+        ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed"
+        ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include
+        End of search list.
+        Compiler executable checksum: 92bf94f8dfdd0ebbfe562d19a913b665
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o /tmp/ccuT7SWg.s
+        GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40
+        COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.'
+        Linking C executable cmTC_9189e
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9189e.dir/link.txt --verbose=1
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc  -fopenmp -v CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -o cmTC_9189e  -v
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs
+        COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc
+        COLLECT_LTO_WRAPPER=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper
+        Target: x86_64-conda-linux-gnu
+        Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 15.1.0 (conda-forge gcc 15.1.0-2) 
+        COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/
+        LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+        Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9189e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9189e.'
+         /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2 -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccljgcSV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9189e /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9189e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9189e.'
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac']
+        ignore line: []
+        ignore line: [Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9189e/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_9189e.dir/build.make CMakeFiles/cmTC_9189e.dir/build]
+        ignore line: [gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac']
+        ignore line: [Building C object CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o]
+        ignore line: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc   -fopenmp -v -o CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac/OpenMPTryFlag.c]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs]
+        ignore line: [COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.1.0 (conda-forge gcc 15.1.0-2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/']
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/cc1 -quiet -v -iprefix /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/ -isysroot /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot -D_REENTRANT /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-jHGFac/OpenMPTryFlag.c -quiet -dumpdir CMakeFiles/cmTC_9189e.dir/ -dumpbase OpenMPTryFlag.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fopenmp -idirafter /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include -o /tmp/ccuT7SWg.s]
+        ignore line: [GNU C23 (conda-forge gcc 15.1.0-2) version 15.1.0 (x86_64-conda-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include"]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+        ignore line: [ignoring duplicate directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/include-fixed]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 92bf94f8dfdd0ebbfe562d19a913b665]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/']
+        ignore line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o /tmp/ccuT7SWg.s]
+        ignore line: [GNU assembler version 2.40 (x86_64-conda-linux-gnu) using BFD version (Anaconda binutils) 2.40]
+        ignore line: [COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o' '-c' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.']
+        ignore line: [Linking C executable cmTC_9189e]
+        ignore line: [/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9189e.dir/link.txt --verbose=1]
+        ignore line: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc  -fopenmp -v CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -o cmTC_9189e  -v]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/specs]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/conda.specs]
+        ignore line: [COLLECT_GCC=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper]
+        ignore line: [Target: x86_64-conda-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-lto --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/work/cf-compilers/x86_64-conda-linux-gnu/sysroot --with-native-system-header-dir=/usr/include --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1746638752229/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib/gcc/x86_64-conda-linux-gnu/15.1.0/include/c++ --with-pkgversion='conda-forge gcc 15.1.0-2' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose --enable-libsanitizer --enable-default-pie --enable-threads=posix]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 15.1.0 (conda-forge gcc 15.1.0-2) ]
+        ignore line: [COMPILER_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/bin/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+        ignore line: [Reading specs from /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_9189e' '-v' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_9189e.']
+        link line: [ /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2 -disable-new-dtags -plugin /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so -plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccljgcSV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_9189e /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtbeginS.o -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0 -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../.. -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o -lgomp -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/crtendS.o /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -rpath-link /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs -L /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/collect2] ==> ignore
+          arg [-disable-new-dtags] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../libexec/gcc/x86_64-conda-linux-gnu/15.1.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccljgcSV.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9189e] ==> ignore
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+          arg [CMakeFiles/cmTC_9189e.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> ignore
+          arg [-rpath-link] ==> ignore
+          arg [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> ignore
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+          arg [-L/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../lib/gcc/x86_64-conda-linux-gnu/15.1.0/../../..] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+        collapse library dir [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib] ==> [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib]
+        implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc/x86_64-conda-linux-gnu/15.1.0;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/gcc;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/x86_64-conda-linux-gnu/sysroot/usr/lib;/sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/lib/stubs]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:238 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e546/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8e546.dir/build.make CMakeFiles/cmTC_8e546.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D'
+        Building CXX object CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D/OpenMPTryFlag.cpp
+        Using built-in specs.
+        COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/'
+         /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_8e546.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccHEXAAf.s
+        GNU C++17 (GCC) version 13.4.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include
+         /usr/local/include
+         /sw/isaac/compilers/gcc/13.4.0/include
+         /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 26fcdf3ab62485d3d37d781b2c5a1e7e
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/'
+         as -v --64 -o CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o /tmp/ccHEXAAf.s
+        GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-125.el8_10
+        COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.'
+        Linking CXX executable cmTC_8e546
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e546.dir/link.txt --verbose=1
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++  -fopenmp -v CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -o cmTC_8e546  -v
+        Using built-in specs.
+        COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++
+        COLLECT_LTO_WRAPPER=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.4.0 (GCC) 
+        COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/
+        Reading specs from /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_8e546' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8e546.'
+         /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2 -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVlaAO1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8e546 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_8e546' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8e546.'
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:282 (message)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:506 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:18 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D']
+        ignore line: []
+        ignore line: [Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e546/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8e546.dir/build.make CMakeFiles/cmTC_8e546.dir/build]
+        ignore line: [gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D']
+        ignore line: [Building CXX object CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/sw/isaac/compilers/gcc/13.4.0/bin/c++   -fopenmp -v -o CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D/OpenMPTryFlag.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/']
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/cc1plus -quiet -v -D_GNU_SOURCE -D_REENTRANT /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-aU1D2D/OpenMPTryFlag.cpp -quiet -dumpdir CMakeFiles/cmTC_8e546.dir/ -dumpbase OpenMPTryFlag.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fopenmp -o /tmp/ccHEXAAf.s]
+        ignore line: [GNU C++17 (GCC) version 13.4.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /spack/spack-0.17.2/apps/linux-rhel8-cascadelake/gcc-10.2.0/eigen-3.4.0-2kpbb7biwpwaa6uouaezcokuzuvynbnu/include/eigen3]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/x86_64-pc-linux-gnu]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../include/c++/13.4.0/backward]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/include]
+        ignore line: [ /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 26fcdf3ab62485d3d37d781b2c5a1e7e]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o /tmp/ccHEXAAf.s]
+        ignore line: [GNU assembler version 2.30 (x86_64-redhat-linux) using BFD version version 2.30-125.el8_10]
+        ignore line: [COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.']
+        ignore line: [Linking CXX executable cmTC_8e546]
+        ignore line: [/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e546.dir/link.txt --verbose=1]
+        ignore line: [/sw/isaac/compilers/gcc/13.4.0/bin/c++  -fopenmp -v CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -o cmTC_8e546  -v]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/sw/isaac/compilers/gcc/13.4.0/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.4.0/configure --prefix=/sw/isaac/compilers/gcc/13.4.0 --disable-multilib --enable-shared]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.4.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_8e546' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread' '-dumpdir' 'cmTC_8e546.']
+        link line: [ /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2 -plugin /sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so -plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVlaAO1.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8e546 /lib/../lib64/crt1.o /lib/../lib64/crti.o /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtbegin.o -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../.. CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/crtend.o /lib/../lib64/crtn.o]
+          arg [/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/sw/isaac/compilers/gcc/13.4.0/libexec/gcc/x86_64-pc-linux-gnu/13.4.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccVlaAO1.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8e546] ==> ignore
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0]
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..] ==> dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..]
+          arg [CMakeFiles/cmTC_8e546.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0] ==> [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../../../lib64] ==> [/sw/isaac/compilers/gcc/13.4.0/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0/../../..] ==> [/sw/isaac/compilers/gcc/13.4.0/lib]
+        implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/sw/isaac/compilers/gcc/13.4.0/lib/gcc/x86_64-pc-linux-gnu/13.4.0;/sw/isaac/compilers/gcc/13.4.0/lib64;/lib64;/usr/lib64;/sw/isaac/compilers/gcc/13.4.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_da896/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_da896.dir/build.make CMakeFiles/cmTC_da896.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4'
+        Building C object CMakeFiles/cmTC_da896.dir/OpenMPCheckVersion.c.o
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc   -fopenmp -o CMakeFiles/cmTC_da896.dir/OpenMPCheckVersion.c.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4/OpenMPCheckVersion.c
+        Linking C executable cmTC_da896
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da896.dir/link.txt --verbose=1
+        /sw/isaac/applications/anaconda3/2024.06/rhel8_cascadelake_binary/anaconda3-2024.06/bin/cc  -fopenmp CMakeFiles/cmTC_da896.dir/OpenMPCheckVersion.c.o -o cmTC_da896
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-8aPEv4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:440 (try_compile)"
+      - "/spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/share/cmake-3.30/Modules/FindOpenMP.cmake:580 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:18 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh"
+      binary: "/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh'
+        
+        Run Build Command(s): /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8cefa/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8cefa.dir/build.make CMakeFiles/cmTC_8cefa.dir/build
+        gmake[1]: Entering directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh'
+        Building CXX object CMakeFiles/cmTC_8cefa.dir/OpenMPCheckVersion.cpp.o
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++   -fopenmp -o CMakeFiles/cmTC_8cefa.dir/OpenMPCheckVersion.cpp.o -c /lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_8cefa
+        /spack/spack-0.23.1/apps/linux-rhel8-cascadelake/gcc-10.2.0/cmake-3.30.5-pyydlhlwww42it6mmyry4mhyp4rds6bb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cefa.dir/link.txt --verbose=1
+        /sw/isaac/compilers/gcc/13.4.0/bin/c++  -fopenmp CMakeFiles/cmTC_8cefa.dir/OpenMPCheckVersion.cpp.o -o cmTC_8cefa
+        gmake[1]: Leaving directory '/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/CMakeScratch/TryCompile-CGQoKh'
+        
+      exitCode: 0
+...

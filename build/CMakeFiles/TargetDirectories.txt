@@ -1,0 +1,3 @@
+/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/acdc.dir
+/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/edit_cache.dir
+/lustre/isaac24/scratch/brendan/fast_acdc/build/CMakeFiles/rebuild_cache.dir

@@ -297,7 +297,6 @@ struct GreedyCoupler {
         SparseMat B_T = solver.B.transpose();
         std::vector<ACDCSolver::Component> single_comp = {{1.0, pi}};
         
-        // Pass buffer by reference (No allocation)
         solver.compute_gradient_internal(B_T, single_comp, G_buffer);
         
         struct SwapMove { int i; int j; double gain; };
@@ -312,7 +311,6 @@ struct GreedyCoupler {
         {
             SwapMove local_best = {-1, -1, 0.0};
             
-            // UPDATED: Uses schedule(dynamic) instead of collapse to fix compiler error
             #pragma omp for schedule(dynamic) nowait
             for (int i = 0; i < N; ++i) {
                 for (int j = i + 1; j < N; ++j) {
@@ -348,19 +346,31 @@ struct GreedyCoupler {
 };
 
 int main() {
+    std::string initial_path = "data/vnc_matching_submission_benchmark_5154247.csv";
+    std::string male_path    = "data/male_connectome_graph.csv";
+    std::string female_path  = "data/female_connectome_graph.csv";
+    std::string output_path  = "final_submission.csv";
+
+    std::cout << "--- Configuration ---" << std::endl;
+    std::cout << "Initial Perm: " << initial_path << std::endl;
+    std::cout << "Male Graph:   " << male_path << std::endl;
+    std::cout << "Female Graph: " << female_path << std::endl;
+    std::cout << "Output File:  " << output_path << std::endl;
+    std::cout << "---------------------" << std::endl;
+
     auto t_total = get_time();
     DataLoader loader;
-    loader.load_benchmark("vnc_matching_submission_benchmark_5154247.csv");
+    
+    loader.load_benchmark(initial_path);
     
     int N = loader.male_ids.size();
-    SparseMat A = loader.load_graph("male_connectome_graph.csv", loader.male_map, N);
-    SparseMat B = loader.load_graph("female_connectome_graph.csv", loader.female_map, N);
+    SparseMat A = loader.load_graph(male_path, loader.male_map, N);
+    SparseMat B = loader.load_graph(female_path, loader.female_map, N);
     
     ACDCSolver solver(A, B, loader.initial_perm);
     std::cout << "Initial Score: " << (long)solver.calculate_score(loader.initial_perm) << std::endl;
 
     // --- MAIN MEMORY BUFFER ---
-    // Allocated once here and reused.
     MatrixRowMaj G_buffer(N, N);
 
     // --- Phase 1: Continuous Relaxation ---
@@ -374,23 +384,35 @@ int main() {
 
     // --- Phase 2: Discrete Search ---
     std::cout << "\n=== Phase 2: Discrete Search ===" << std::endl;
-        Eigen::VectorXi current_pi = solver.get_best_permutation();
-        GreedyCoupler greedy(solver);
+    Eigen::VectorXi current_pi = solver.get_best_permutation();
+    GreedyCoupler greedy(solver);
+    
+    double current_score = solver.calculate_score(current_pi);
+    std::cout << "Starting Discrete Score: " << (long)current_score << std::endl;
+
+    int iter = 1;
+    while (true) {
+        double pre_score = current_score;
+        greedy.perform_pairwise_swap(current_pi);
+        current_score = solver.calculate_score(current_pi);
         
-        int iter = 0;
-        while (true) { // Keep running until no improvement
-            double pre_score = solver.calculate_score(current_pi);
-            greedy.perform_pairwise_swap(current_pi);
-            double post_score = solver.calculate_score(current_pi);
-            
-            // If score didn't improve (or improved negligibly), stop.
-            if (post_score <= pre_score) {
-                std::cout << "   - Converged (No further beneficial swaps)." << std::endl;
-                break;
-            }
-            iter++;
+        if (current_score <= pre_score + 1e-6) {
+            std::cout << "   - Converged (No further beneficial swaps)." << std::endl;
+            break;
         }
-    std::cout << "Final Score: " << (long)solver.calculate_score(current_pi) << std::endl;
+        
+        std::cout << "   - [Iter " << iter++ << "] Total Score: " << (long)current_score 
+                  << " (+" << (long)(current_score - pre_score) << ")" << std::endl;
+    }
+
+    std::cout << "Final Score: " << (long)current_score << std::endl;
+    
+    std::ofstream out(output_path);
+    out << "male_id,female_id" << std::endl;
+    for(int i=0; i<N; ++i) {
+        out << loader.male_ids[i] << "," << loader.female_ids[current_pi[i]] << std::endl;
+    }
+    
     print_elapsed(t_total, "Total Execution");
     return 0;
 }
