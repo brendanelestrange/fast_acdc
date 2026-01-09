@@ -2,11 +2,10 @@
 
 **Fast ACDC** is a highly optimized C++ implementation of the **Alternating Convex/Discrete Coupling (ACDC)** algorithm for solving large-scale Graph Matching (GM) problems.
 
-This project was specifically engineered to solve the **VNC (Ventral Nerve Cord) Connectome Matching Challenge** ($N \approx 25,000$ nodes) on commodity hardware with limited RAM (24GB), achieving competitive solutions in under an hour.
+This project was specifically engineered to solve the **VNC (Ventral Nerve Cord) Connectome Matching Challenge** ($N \approx 18,524 $ nodes) on commodity hardware with limited RAM (24GB), achieving competitive solutions in under an hour.
 
 ## 🚀 Key Features
 
-* **Zero-Copy Architecture:** Implements custom Eigen wrappers and in-place matrix modifications to prevent memory explosion. Capable of handling $25k \times 25k$ dense matrices on <24GB RAM.
 * **Hybrid Solver:**
     * **Phase 1:** Continuous Relaxation using the **Frank-Wolfe** algorithm with an optimized **LAPJV** (Linear Assignment Problem) backend.
     * **Phase 2:** Discrete Local Search using a parallelized greedy strategy to refine the permutation via pairwise swaps.
