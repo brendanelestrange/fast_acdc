@@ -10,7 +10,6 @@ This project was specifically engineered to solve the **VNC (Ventral Nerve Cord)
 * **Hybrid Solver:**
     * **Phase 1:** Continuous Relaxation using the **Frank-Wolfe** algorithm with an optimized **LAPJV** (Linear Assignment Problem) backend.
     * **Phase 2:** Discrete Local Search using a parallelized greedy strategy to refine the permutation via pairwise swaps.
-* **Parallelized:** Extensive use of **OpenMP** to parallelize gradient computations and discrete swap scanning, achieving a ~100x speedup over standard Python implementations.
 * **Sparse Optimized:** Efficient handling of sparse adjacency matrices (`Eigen::SparseMatrix`) for graph operations.
 
 ## 🛠️ Prerequisites
