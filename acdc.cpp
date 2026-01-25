@@ -32,8 +32,6 @@ std::string clean_id(std::string s) {
 }
 
 // --- OPTIMIZED LAPJV Wrapper ---
-// Accepts a Mutable Reference to a RowMajor matrix.
-// Modifies the matrix in-place (used for cost reduction inside lapjv) to avoid copies.
 Eigen::VectorXi solve_linear_assignment(Eigen::Ref<MatrixRowMaj> cost_matrix) {
     int n = cost_matrix.rows();
     std::vector<double*> rows(n);
@@ -127,6 +125,12 @@ public:
 
     ACDCSolver(const SparseMat& a, const SparseMat& b, const Eigen::VectorXi& p0) 
         : A(a), B(b), N(a.rows()) {
+        reset_state(p0);
+    }
+
+    // NEW: Needed to reset the convex hull when switching from Discrete -> Relaxation
+    void reset_state(const Eigen::VectorXi& p0) {
+        P_components.clear();
         P_components.push_back({1.0, p0});
     }
 
@@ -143,9 +147,8 @@ public:
         return score;
     }
 
-    // UPDATED: Now returns void and takes buffer as argument
     void compute_gradient_internal(const SparseMat& B_T, const std::vector<Component>& components, MatrixRowMaj& G) {
-        G.setZero(); // Reset existing memory
+        G.setZero(); 
         
         for (const auto& comp : components) {
             const Eigen::VectorXi& pi = comp.perm;
@@ -198,22 +201,16 @@ public:
         return solve_linear_assignment(P_dense);
     }
 
-    // UPDATED: Accepts G_buffer
     void frank_wolfe_step(MatrixRowMaj& G_buffer) {
         SparseMat B_T = B.transpose();
         
-        // 1. Compute Gradient (No allocation, writes to G_buffer)
-        auto t_g = get_time();
+        // 1. Compute Gradient 
         compute_gradient_internal(B_T, P_components, G_buffer);
-        print_elapsed(t_g, "   - Gradient");
-
-        std::cout << "   - Preconditioned LAP... " << std::flush;
-        auto t_lap = get_time();
 
         // 2. Get Pi_t
         Eigen::VectorXi pi_t = get_best_permutation();
 
-        // 3. Compute Omega (Re-use Lambda memory)
+        // 3. Compute Omega 
         MatrixRowMaj Lambda(N, N);
         #pragma omp parallel for collapse(2)
         for(int i=0; i<N; ++i) {
@@ -241,12 +238,8 @@ public:
         Eigen::VectorXi q_perm(N);
         #pragma omp parallel for
         for(int i=0; i<N; ++i) q_perm[i] = pi_t[omega_perm[i]];
-        
-        print_elapsed(t_lap, "Done");
 
         // 4. Line Search
-        // We need a temporary buffer for G_Q, but G_buffer must remain alive.
-        // This is safe: Peak Memory = G_buffer (5GB) + G_Q (5GB) = 10GB.
         MatrixRowMaj G_Q(N, N); 
         std::vector<Component> Q_comp = {{1.0, q_perm}};
         compute_gradient_internal(B_T, Q_comp, G_Q);
@@ -269,7 +262,7 @@ public:
         if (std::abs(A_term - B_term) < 1e-9) alpha = (A_term > 0) ? 1.0 : 0.0;
         else alpha = std::max(0.0, std::min(1.0, A_term / (A_term - B_term)));
 
-        std::cout << "   - Alpha: " << alpha << std::endl;
+        // std::cout << "   - Alpha: " << alpha << std::endl; 
         if (alpha > 1e-4) {
             for(auto& comp : P_components) comp.weight *= (1.0 - alpha);
             P_components.push_back({alpha, q_perm});
@@ -283,7 +276,7 @@ public:
 struct GreedyCoupler {
     ACDCSolver& solver;
     int N;
-    MatrixRowMaj G_buffer; // Own buffer for greedy step
+    MatrixRowMaj G_buffer;
 
     GreedyCoupler(ACDCSolver& s) : solver(s), N(s.N) {
         G_buffer.resize(N, N);
@@ -293,7 +286,8 @@ struct GreedyCoupler {
         return std::min(a, B_ii) + std::min(a, B_jj) - std::min(a, B_ij) - std::min(a, B_ji);
     }
 
-    void perform_pairwise_swap(Eigen::VectorXi& pi) {
+    // UPDATED: Returns true if a swap occurred, false otherwise
+    bool perform_pairwise_swap(Eigen::VectorXi& pi) {
         SparseMat B_T = solver.B.transpose();
         std::vector<ACDCSolver::Component> single_comp = {{1.0, pi}};
         
@@ -304,8 +298,7 @@ struct GreedyCoupler {
         std::vector<double> B_diag(N);
         for(int k=0; k<N; ++k) B_diag[k] = solver.B.coeff(pi[k], pi[k]);
 
-        std::cout << "   - [Discrete] Scanning pairs..." << std::flush;
-        auto t_scan = get_time();
+        // std::cout << "   - [Discrete] Scanning pairs..." << std::flush;
         
         #pragma omp parallel
         {
@@ -334,13 +327,13 @@ struct GreedyCoupler {
             #pragma omp critical
             { if (local_best.gain > best_move.gain) best_move = local_best; }
         }
-        print_elapsed(t_scan, " Done");
 
         if (best_move.gain > 0) {
-            std::cout << "   - [Discrete] SWAP: " << best_move.i << " <-> " << best_move.j << " Gain: " << best_move.gain << std::endl;
+            std::cout << "SWAP " << best_move.i << "<->" << best_move.j << " Gain:" << best_move.gain << " ";
             std::swap(pi[best_move.i], pi[best_move.j]);
+            return true;
         } else {
-            std::cout << "   - [Discrete] No beneficial swaps found." << std::endl;
+            return false;
         }
     }
 };
@@ -368,44 +361,61 @@ int main() {
     SparseMat B = loader.load_graph(female_path, loader.female_map, N);
     
     ACDCSolver solver(A, B, loader.initial_perm);
-    std::cout << "Initial Score: " << (long)solver.calculate_score(loader.initial_perm) << std::endl;
+    Eigen::VectorXi current_pi = loader.initial_perm;
+    GreedyCoupler greedy(solver);
 
-    // --- MAIN MEMORY BUFFER ---
     MatrixRowMaj G_buffer(N, N);
 
-    // --- Phase 1: Continuous Relaxation ---
-    std::cout << "\n=== Phase 1: Continuous Relaxation ===" << std::endl;
-    for (int t = 1; t <= 10; ++t) {
-        std::cout << "Iter " << t << ": ";
-        solver.frank_wolfe_step(G_buffer);
-        Eigen::VectorXi best_pi = solver.get_best_permutation();
-        std::cout << " | Proj Score: " << (long)solver.calculate_score(best_pi) << std::endl;
-    }
+    std::cout << "Starting Score: " << (long)solver.calculate_score(current_pi) << std::endl;
+    std::cout << "\n=== Starting Interleaved Optimization ===" << std::endl;
 
-    // --- Phase 2: Discrete Search ---
-    std::cout << "\n=== Phase 2: Discrete Search ===" << std::endl;
-    Eigen::VectorXi current_pi = solver.get_best_permutation();
-    GreedyCoupler greedy(solver);
-    
-    double current_score = solver.calculate_score(current_pi);
-    std::cout << "Starting Discrete Score: " << (long)current_score << std::endl;
+    int epoch = 0;
+    while(true) {
+        epoch++;
+        double start_epoch_score = solver.calculate_score(current_pi);
+        std::cout << "\n--- Epoch " << epoch << " (Start Score: " << (long)start_epoch_score << ") ---" << std::endl;
 
-    int iter = 1;
-    while (true) {
-        double pre_score = current_score;
-        greedy.perform_pairwise_swap(current_pi);
-        current_score = solver.calculate_score(current_pi);
+        // 1. RELAXATION PHASE (10 Runs)
+        // Reset solver history to focus exploration around the current best discrete permutation
+        solver.reset_state(current_pi); 
+        std::cout << "   [Relaxation] Running 10 steps..." << std::flush;
+        auto t_relax = get_time();
+        for(int t=0; t<10; ++t) {
+            solver.frank_wolfe_step(G_buffer);
+        }
+        print_elapsed(t_relax, " Done.");
         
-        if (current_score <= pre_score + 1e-6) {
-            std::cout << "   - Converged (No further beneficial swaps)." << std::endl;
-            break;
+        // Project back to discrete space
+        current_pi = solver.get_best_permutation();
+        double post_relax_score = solver.calculate_score(current_pi);
+        std::cout << "   [Relaxation] Result Score: " << (long)post_relax_score << std::endl;
+
+        // 2. DISCRETE PHASE (10 Swaps)
+        std::cout << "   [Discrete]   Running max 10 swaps..." << std::endl;
+        int swaps_done = 0;
+        for(int t=0; t<10; ++t) {
+            std::cout << "     Run " << t+1 << ": ";
+            bool swapped = greedy.perform_pairwise_swap(current_pi);
+            if(swapped) {
+                std::cout << "(Ok)" << std::endl;
+                swaps_done++;
+            } else {
+                std::cout << "(No Move)" << std::endl;
+                break; // Stop discrete phase if local max reached
+            }
         }
         
-        std::cout << "   - [Iter " << iter++ << "] Total Score: " << (long)current_score 
-                  << " (+" << (long)(current_score - pre_score) << ")" << std::endl;
+        double end_epoch_score = solver.calculate_score(current_pi);
+        std::cout << "   [End Epoch]  Score: " << (long)end_epoch_score << " (Delta: " << (long)(end_epoch_score - start_epoch_score) << ")" << std::endl;
+
+        // 3. CONVERGENCE CHECK
+        if (end_epoch_score <= start_epoch_score + 1e-6) {
+            std::cout << "\n>>> CONVERGED <<<" << std::endl;
+            break;
+        }
     }
 
-    std::cout << "Final Score: " << (long)current_score << std::endl;
+    std::cout << "Final Score: " << (long)solver.calculate_score(current_pi) << std::endl;
     
     std::ofstream out(output_path);
     out << "male_id,female_id" << std::endl;
